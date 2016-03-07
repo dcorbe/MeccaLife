@@ -22,5 +22,6 @@ CASH = CASH - _price;
 player say3D "buy";
 
 life_clothesPurchased = true;
+
 [] call life_fnc_Uniformscolor;
 closeDialog 0;

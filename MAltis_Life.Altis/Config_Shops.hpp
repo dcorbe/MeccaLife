@@ -124,7 +124,7 @@ class WeaponShops {
 			{ "bipod_01_F_snd", "Desert Bipod", 35000, { "", "", -1 } },
 			{ "bipod_01_F_mtp", "Woodland Bipod", 35000, { "", "", -1 } },
 			
-			{ "launch_Titan_F", "", 500000, { "", "", -1 } },
+			
             { "Titan_AA", "", 200000, { "", "", -1 } },
             { "acc_flashlight", "", 500, { "", "", -1 } },
             { "optic_ACO_grn", "", 2500, { "", "", -1 } },	
@@ -204,8 +204,8 @@ class WeaponShops {
             { "200Rnd_65x39_cased_Box", "", 50000, { "", "", -1 } },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 50000, { "", "", -1 } },
 				
-			{ "launch_Titan_F", "", 500000, { "", "", -1 } },
-            { "Titan_AA", "", 200000, { "", "", -1 } },
+			
+            { "Titan_AA", "", 500000, { "", "", -1 } },
             { "acc_flashlight", "", 500, { "", "", -1 } },
             { "optic_ACO_grn", "", 10000, { "", "", -1 } },	
 			{ "optic_Hamr", "", 4000, { "", "", -1 } },
@@ -316,6 +316,49 @@ class WeaponShops {
 			{ "Chemlight_blue", "", 300, { "", "", -1 } }
         };
     };
+	class bodya {
+        name = "Body Armor Shop";
+        side = "civ";
+        license = "rebel";
+        level = -1;
+        msg = "";
+        items[] = {
+			{ "V_TacVest_khk", "", 20000, { "", "", -1 } },
+			{ "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
+			{ "V_HarnessO_brn", "", 7000, { "", "", -1 } },
+			{ "V_Rangemaster_belt", "", 1800, { "", "", -1 } },
+			{ "V_PlateCarrier2_rgr", "", 50000, { "", "", -1 } },
+			{ "V_RebreatherB", "", 5000, { "", "", -1 } },
+			{ "V_RebreatherIA", "", 5000, { "", "", -1 } },
+			{ "V_RebreatherIR", "", 5000, { "", "", -1 } },
+			{ "V_HarnessOGL_gry", "SuicideVest", 500000, { "", "", -1 } },
+			{ "V_PlateCarrierSpec_mtp", "Special Carrier", 250000, { "", "", -1 } },
+			{ "V_PlateCarrierSpec_rgr", "Special Carrier", 250000, { "", "", -1 } },
+			{ "V_PlateCarrierGL_rgr", "Carrier GL Green", 500000, { "", "", -1 } },
+			{ "V_PlateCarrierIAGL_dgtl", "Carrier Rig Digi", 350000, { "life_donator", "SCALAR", 2 } }, 
+			{ "V_PlateCarrierIAGL_oli", "Carrier GL Rig olive", 350000, { "life_donator", "SCALAR", 2 } }
+        };
+    };
+	
+	class bodyb {
+        name = "Civilian Armor Shop";
+        side = "civ";
+        license = "rebel";
+        level = -1;
+        msg = "";
+        items[] = {
+			{ "V_TacVest_khk", "", 20000, { "", "", -1 } },
+			{ "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
+			{ "V_HarnessO_brn", "", 7000, { "", "", -1 } },
+			{ "V_Rangemaster_belt", "", 1800, { "", "", -1 } },
+			{ "V_PlateCarrier2_rgr", "", 100000, { "", "", -1 } },
+			{ "V_RebreatherB", "", 5000, { "", "", -1 } },
+			{ "V_RebreatherIA", "", 5000, { "", "", -1 } },
+			{ "V_RebreatherIR", "", 5000, { "", "", -1 } }
+			
+        };
+    };
+			
     //Cop Shops
     class cop_basic {
         name = "Mecca Cop Shop";

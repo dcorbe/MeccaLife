@@ -223,6 +223,7 @@ class Clothing {
 		};
 	};
 
+
 	class reb {
 		title = "STR_Shops_C_Rebel";
 		license = "rebel";
@@ -336,24 +337,7 @@ class Clothing {
 			{ "G_Diving", "Dive Goggles", 5000, { "", "", -1 } }
 		};
 
-		vests[] = {
-			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
-			{ "V_TacVest_khk", "", 20000, { "", "", -1 } },
-			{ "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
-			{ "V_HarnessO_brn", "", 7000, { "", "", -1 } },
-			{ "V_Rangemaster_belt", "", 1800, { "", "", -1 } },
-			{ "V_PlateCarrier2_rgr", "", 50000, { "", "", -1 } },
-			{ "V_RebreatherB", "", 5000, { "", "", -1 } },
-			{ "V_RebreatherIA", "", 5000, { "", "", -1 } },
-			{ "V_RebreatherIR", "", 5000, { "", "", -1 } },
-			{ "V_HarnessOGL_gry", "SuicideVest", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_mtp", "Special Carrier", 250000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_rgr", "Special Carrier", 250000, { "", "", -1 } },
-			{ "V_PlateCarrierGL_rgr", "Carrier GL Green", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierIAGL_dgtl", "Carrier Rig Donor", 350000, { "life_donator", "SCALAR", 2 } }, 
-			{ "V_PlateCarrierIAGL_oli", "Carrier GL Rig DonorSkin", 350000, { "life_donator", "SCALAR", 2 } }
-			
-		};
+		
 
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
@@ -365,7 +349,8 @@ class Clothing {
 			{ "B_Bergen_sgg", "", 800, { "", "", -1 } },
 			{ "B_Kitbag_cbr", "", 1000, { "", "", -1 } },
 			{ "B_Carryall_oli", "", 2000, { "", "", -1 } },
-			{ "B_Carryall_khk", "", 2000, { "", "", -1 } }
+			{ "B_Carryall_khk", "", 2000, { "", "", -1 } },
+			{ "B_Carryall_oucamo", "UnNamed's Backpack", 20000, { "life_donator", "SCALAR", 3 } }
 		};
 	};
 

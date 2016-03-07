@@ -32,6 +32,7 @@ SPY_Enable = true;
 #include "dialog\MasterHandler.h"
 #include "Config_Master.hpp"
 
+#include "infiSTAR_AdminMenu.hpp"
 class RscTitles
 {
 	#include "dialog\ui.hpp"

@@ -14,7 +14,6 @@ life_versionInfo = "Altis Life RPG v4.0";
 [] execVM "scripts\teargas.sqf"; 
 0 = execVM "IgiLoad\IgiLoadInit.sqf";
 
-
 //LIONS.. hiding custom markerse... rawr..? fk em
 {_x setMarkerAlphaLocal 0} forEach ["mrkcocaineRed","mrkcocaineRed_1","mrkcocaineRed_2","mrkcocaineRed_3","mrkcocaineRed_4","mrkcocaineGreen","mrkheroinRed","mrkheroinRed_1","mrkheroinRed_2","mrkheroinRed_3","mrkheroinRed_4","mrkheroinGreen","mrkweedRed","mrkweedRed_1","mrkweedRed_2","mrkweedRed_3","mrkweedRed_4","mrkweedGreen","mrklsdRed","mrklsdRed_1","mrklsdRed_2","mrklsdRed_3","mrklsdGreen"];
 

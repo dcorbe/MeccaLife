@@ -7,6 +7,11 @@
 removeAllWeapons player;
 if (uniform player in life_hidden_clothing) then {removeUniform player;};
 if (vest player in life_hidden_clothing or vest player == "V_HarnessOGL_gry") then {removeVest player;};
+if (vest player in life_hidden_clothing or vest player == "V_PlateCarrierSpec_mtp,") then {removeVest player;};
+if (vest player in life_hidden_clothing or vest player == "V_PlateCarrierSpec_rgr") then {removeVest player;};
+if (vest player in life_hidden_clothing or vest player == "V_PlateCarrierGL_rgr") then {removeVest player;};
+if (vest player in life_hidden_clothing or vest player == "V_PlateCarrierIAGL_dgtl") then {removeVest player;};
+if (vest player in life_hidden_clothing or vest player == "V_PlateCarrierIAGL_oli") then {removeVest player;};
 if (headgear player in life_hidden_clothing) then {removeHeadgear player;};
 //if (backpack player in ["B_Bergen_blk","B_Kitbag_mcamo_Eng"]) then {removeBackpack player;};
 

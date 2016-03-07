@@ -34,7 +34,7 @@ Moving this into uniformscolor
     };
 };
 */
-
+player setVariable["nonLethals",true,true];
 player setVariable["rank",(FETCH_CONST(life_coplevel)),true];
 [] spawn life_fnc_INFO;
 	waitUntil{!isNull (findDisplay 999999)}; //Wait for the welcome to be open.
