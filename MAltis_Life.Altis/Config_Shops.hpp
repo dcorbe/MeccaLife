@@ -111,12 +111,10 @@ class WeaponShops {
             { "200Rnd_65x39_cased_Box", "", 50000, { "", "", -1 } },
 			{ "200Rnd_65x39_cased_Box_Tracer", "", 50000, { "", "", -1 } },
 			
-			{ "srifle_DMR_03_F", "", 125000, { "", "", -1 } },
 			{ "srifle_DMR_03_multicam_F", "", 125000, { "", "", -1 } },
 			{ "srifle_DMR_03_khaki_F", "", 125000, { "", "", -1 } },
 			{ "srifle_DMR_03_woodland_F", "", 125000, { "", "", -1 } },
 			{ "srifle_DMR_06_camo_F", "", 125000, { "", "", -1 } },
-			{ "srifle_DMR_06_olive_F", "", 125000, { "", "", -1 } },
 			{ "srifle_EBR_F", "", 125000, { "", "", -1 } },
             { "20Rnd_762x51_Mag", "", 500, { "", "", -1 } },
 				
