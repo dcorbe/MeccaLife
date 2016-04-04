@@ -353,7 +353,134 @@ class Clothing {
 			{ "B_Carryall_oucamo", "UnNamed's Backpack", 20000, { "life_donator", "SCALAR", 3 } }
 		};
 	};
+class rebA {
+		title = "STR_Shops_C_Rebel";
+		license = "rebel";
+		side = "civ";
 
+		uniforms[] = {
+			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
+			{ "U_NikosBody", "Bro Suit", 5187, { "life_donator", "SCALAR", 1 } },
+			{ "U_I_G_Story_Protagonist_F", "", 750, { "", "", -1 } },
+			{ "U_I_G_resistanceLeader_F", "", 1500, { "", "", -1 } },
+			{ "U_O_SpecopsUniform_ocamo", "", 7500, { "", "", -1 } },
+			{ "U_O_PilotCoveralls", "", 5000, { "", "", -1 } },
+			{ "U_IG_leader", "Guerilla Leader", 5000, { "", "", -1 } },
+			{ "U_O_GhillieSuit", "", 10000, { "", "", -1 } },
+			{ "U_B_FullGhillie_lsh", "Lush NATO", 30000, { "", "", -1 } },
+			{ "U_O_FullGhillie_lsh", "Lush CSAT", 30000, { "", "", -1 } },
+			{ "U_I_FullGhillie_lsh", "Lush AAF", 30000, { "", "", -1 } },
+			{ "U_B_FullGhillie_sard", "Semi Arid NATO", 30000, { "", "", -1 } },
+			{ "U_O_FullGhillie_sard", "Semi Arid CSAT", 30000, { "", "", -1 } },
+			{ "U_I_FullGhillie_sard", "Semi Arid AAF", 30000, { "", "", -1 } },
+			{ "U_B_FullGhillie_ard", "Arid NATO", 30000, { "", "", -1 } },
+			{ "U_O_FullGhillie_ard", "Arid CSAT", 30000, { "", "", -1 } },
+			{ "U_I_FullGhillie_ard", "Arid AAF", 30000, { "", "", -1 } },
+			{ "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 650, { "", "", -1 } },
+			{ "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "", "", -1 } },
+			{ "U_IG_Guerilla2_3", "The Outback Rangler", 700, { "", "", -1 } },
+			{ "U_C_HunterBody_grn", "The Hunters Look", 700, { "", "", -1 } },
+			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
+			{ "U_IG_Guerilla1_1", "Metal", 5187, { "life_donator", "SCALAR", 3 } },
+			{ "U_O_CombatUniform_oucamo", "Urban Camo", 5187, { "life_donator", "SCALAR", 4 } },
+			{ "U_I_CombatUniform", "Mafia suit", 5187, { "life_donator", "SCALAR", 5 } },
+			{ "U_B_GhillieSuit", "Nato", 10000, { "life_donator", "SCALAR", 4 } },
+			{ "U_B_Wetsuit", "", 2000, { "", "", -1 } },
+			{ "U_I_Wetsuit", "", 2000, { "", "", -1 } },
+			{ "U_O_Wetsuit", "", 2000, { "", "", -1 } }
+			
+			
+			
+		};
+		
+
+		headgear[] = {
+			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
+			{ "H_ShemagOpen_tan", "", 850, { "", "", -1 } },
+			{ "H_Shemag_olive", "", 850, { "", "", -1 } },
+			{ "H_ShemagOpen_khk", "", 800, { "", "", -1 } },
+			{ "H_HelmetO_ocamo", "", 1500, { "", "", -1 } },
+			{ "H_MilCap_oucamo", "", 700, { "", "", -1 } },
+			{ "H_Bandanna_camo", "", 650, { "", "", -1 } },
+			{ "H_HelmetB_plain_mcamo", "", 4000, { "", "", -1 } },
+			{ "H_Booniehat_mcamo", "", 120, { "", "", -1 } },
+			{ "H_MilCap_mcamo", "", 100, { "", "", -1 } },
+			{ "H_Bandanna_camo", "Camo Bandanna", 120, { "", "", -1 } },
+			{ "H_Bandanna_surfer", "Surfer Bandanna", 130, { "", "", -1 } },
+			{ "H_Bandanna_gry", "Grey Bandanna", 150, { "", "", -1 } },
+			{ "H_Bandanna_cbr", "", 165, { "", "", -1 } },
+			{ "H_Bandanna_surfer", "", 135, { "", "", -1 } },
+			{ "H_Bandanna_khk", "Khaki Bandanna", 145, { "", "", -1 } },
+			{ "H_Bandanna_sgg", "Sage Bandanna", 160, { "", "", -1 } },
+			{ "H_StrawHat", "Straw Fedora", 225, { "", "", -1 } },
+			{ "H_BandMask_blk", "Hat & Bandanna", 300, { "", "", -1 } },
+			{ "H_Booniehat_tan", "", 425, { "", "", -1 } },
+			{ "H_Hat_blue", "", 310, { "", "", -1 } },
+			{ "H_Hat_brown", "", 276, { "", "", -1 } },
+			{ "H_Hat_checker", "", 340, { "", "", -1 } },
+			{ "H_Hat_grey", "", 280, { "", "", -1 } },
+			{ "H_Hat_tan", "", 265, { "", "", -1 } },
+			{ "H_Cap_blu", "", 150, { "", "", -1 } },
+			{ "H_Cap_grn", "", 150, { "", "", -1 } },
+			{ "H_Cap_grn_BI", "", 150, { "", "", -1 } },
+			{ "H_Cap_oli", "", 150, { "", "", -1 } },
+			{ "H_Cap_red", "", 150, { "", "", -1 } },
+			{ "H_Cap_tan", "", 150, { "", "", -1 } },
+			{ "H_HelmetCrew_B", "", 4500, { "", "", -1 } },
+			{ "H_HelmetLeaderO_oucamo", "Cyborg", 5000, { "life_donator", "SCALAR", 5 } },
+			{ "H_HelmetB_light_snakeskin", "Donor Helmet", 5000, { "life_donator", "SCALAR", 1 } },
+			{ "H_HelmetSpecO_blk", "Donor Helmet", 5000, { "life_donator", "SCALAR", 2 } },
+			{ "H_CrewHelmetHeli_I", "Camo", 5000, { "life_donator", "SCALAR", 3 } },
+			{ "H_CrewHelmetHeli_O", "Green", 5000, { "life_donator", "SCALAR", 3 } },
+			{ "H_CrewHelmetHeli_B", "Vader", 5000, { "life_donator", "SCALAR", 3 } }
+			
+		};
+
+		goggles[] = {
+			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
+			{ "G_Shades_Black", "", 25, { "", "", -1 } },
+			{ "G_Shades_Blue", "", 20, { "", "", -1 } },
+			{ "G_Sport_Blackred", "", 20, { "", "", -1 } },
+			{ "G_Sport_Checkered", "", 20, { "", "", -1 } },
+			{ "G_Sport_Blackyellow", "", 20, { "", "", -1 } },
+			{ "G_Sport_BlackWhite", "", 20, { "", "", -1 } },
+			{ "G_Squares", "", 10, { "", "", -1 } },
+			{ "G_Lowprofile", "", 30, { "", "", -1 } },
+			{ "G_Combat", "", 55, { "", "", -1 } },
+			{ "G_Squares", "", 100, { "", "", -1 } },
+			{ "G_Aviator", "", 100, { "", "", -1 } },
+			{ "G_Lady_Mirror", "", 100, { "", "", -1 } },
+			{ "G_Lady_Dark", "", 150, { "", "", -1 } },
+			{ "G_Lady_Blue", "", 150, { "", "", -1 } },
+			{ "G_Lowprofile", "", 300, { "", "", -1 } },
+			{ "G_Combat", "", 5500, { "", "", -1 } },
+			{ "G_Balaclava_lowprofile", "Balaclava LP", 5000, { "life_donator", "SCALAR", 4 } },
+			{ "G_Bandanna_beast", "Beast", 5000, { "life_donator", "SCALAR", 5 } },
+			{ "G_Bandanna_aviator", "aviator", 5000, { "life_donator", "SCALAR", 3 } },
+			{ "G_Bandanna_sport", "Masked Sport", 5000, { "life_donator", "SCALAR", 2 } },
+			{ "G_Bandanna_shades", "Masked Shades", 5000, { "life_donator", "SCALAR", 1 } },
+			{ "G_Diving", "Dive Goggles", 5000, { "", "", -1 } }
+		};
+
+		vests[] = {
+			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
+			
+			
+		};
+
+		backpacks[] = {
+			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
+			{"B_AssaultPack_cbr", "", 450, { "", "", -1 }},
+			{ "B_Kitbag_mcamo", "", 400, { "", "", -1 } },
+			{ "B_TacticalPack_oli", "", 800, { "", "", -1 } },
+			{ "B_FieldPack_ocamo", "", 800, { "", "", -1 } },
+			{ "B_FieldPack_blk", "", 800, { "", "", -1 } },
+			{ "B_Bergen_sgg", "", 800, { "", "", -1 } },
+			{ "B_Kitbag_cbr", "", 1000, { "", "", -1 } },
+			{ "B_Carryall_oli", "", 2000, { "", "", -1 } },
+			{ "B_Carryall_khk", "", 2000, { "", "", -1 } }
+		};
+	};
 	class kart {
 		title = "STR_Shops_C_Kart";
 		license = "";
