@@ -43,7 +43,14 @@ class Life_Client_Core
 		class lockGang {};
 		class unlockGang {};
 	};	
-	
+	class Gangwars
+    {
+  	file = "Gangwars";
+    class AS_GANG_openMenu {};
+   	class AS_GANG_receive {};
+   	class AS_GANG_question {};
+    class AS_GANG_answer {};
+   };
 	
 	class Admin
 	{
