@@ -121,4 +121,5 @@ if(!isNull _killer && {_killer != _unit} && {side _killer == west} && {side _kil
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
-
+//GangWarStuff
+[[group _killer,group player,_killer,player],"TON_fnc_AS_GANG_kill",false,false] spawn life_fnc_mp;

@@ -189,6 +189,14 @@ class CfgFunctions
 			class removeGang {};
 			class updateGang {};
 		};
+		class Gangwars
+		{
+ 		file = "\life_server\Functions\Gangwars";
+ 		class AS_GANG_war {};
+ 		class AS_GANG_getValue {};
+  		class AS_GANG_takeTerr {};
+ 		class AS_GANG_kill {};
+  		};
 
 		class Actions
 		{
