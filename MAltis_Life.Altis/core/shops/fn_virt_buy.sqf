@@ -50,11 +50,37 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			SUB(life_cash,_price);
 			//[[1,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
 		};
-	} else {
+		} else {
 		if((_price * _amount) > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
 		SUB(life_cash,(_price * _amount));
 		//[[1,player,life_shop_type,_amount,_price,_type],"TON_fnc_Ajustprices",false,false] spawn life_fnc_MP;
+		};
+		} else {
+		_oldPrice = _price;
+		_tax = false;
+		_toSelect = ((life_capture_list) select 0);
+		if(life_virt_shop in["rebel"] && (_toSelect select 2) == 1 && (_toSelect select 0) != group player getVariable["gang_name",""]) then {
+			_price = _price * 1.04;
+			_tax = true;
+		};
+		if((_price * _amount) > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
+		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
+		["cash","take",_price*_amount] call life_fnc_handlePaper;
+		PlaySound "purchase";
+		if(_tax) then {
+			_taxed = round (_price - _oldPrice);
+			if(_taxed < 1) exitWith {};
+			systemChat format["A tax of %1 was taken by the owners of %2",_taxed,(_toSelect select 0)];
+			life_tax = life_tax + _taxed;
+			if(life_tax == _taxed) then {
+				[_toSelect select 0] spawn {
+					waitUntil{!dialog};
+					[[5,nil,(_this select 0),life_tax],"TON_fnc_updateGang",(false),false] spawn life_fnc_MP;
+					life_tax = 0;
+				};
+			};
+		};
 	};
 	
 	[] call life_fnc_virt_update;

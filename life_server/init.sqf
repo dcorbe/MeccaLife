@@ -226,3 +226,4 @@ publicVariable "wantedList";
 		[] spawn life_fnc_wantedSyncList;
 	};
 };
+[] spawn TON_fnc_capZones;

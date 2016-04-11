@@ -44,6 +44,14 @@ switch (_mode) do {
 		_membersFinal = _group getVariable "gang_members";
 		_query = format["gangMembersUpdate:%1:%2",_membersFinal,_groupID];
 	};
+	case 5: {
+		_gang = [_this,2,"",[""]] call BIS_fnc_param;
+		_toAdd = [_this,3,0,[0]] call BIS_fnc_param;
+		_query =  format["gangBankInfoUpdate:%1:%2"_bank,_groupID];
+		_group = grpNull;
+		{if(_gang == (_x getVariable["gang_name",""])) exitWith {_group = _x}} forEach allGroups;
+		if(!isNull _group) then { _group setVariable["gang_bank",((_group getVariable["gang_bank",0]) + _toAdd),true]; };
+	};
 };
 
 if(!isNil "_query") then {

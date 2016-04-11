@@ -397,6 +397,8 @@ class Life_Client_Core
 		class updateGangInfo {};
 		class gangDemote {};
 		class updateGangHouse {};
+		class toggleCaptureUI {};
+		class updateCaptureUI {};
 	};
 	
 	class Shops
