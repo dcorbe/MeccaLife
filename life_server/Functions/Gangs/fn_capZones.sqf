@@ -1,4 +1,4 @@
-_query = format["gangCartelControl:%1"1];
+_query = format["gangCartelControl:%1",1];
 
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 life_capture_list = _queryResult select 0;
@@ -70,7 +70,7 @@ KBW_fnc_handleCapture = {
 			publicVariable "life_capture_list";
 			[] spawn 
 			{
-				_query = format["gangCartelSet:%1"1];
+				_query = format["gangCartelSet:%1",1];
 				[_query,1] call DB_fnc_asyncCall;
 			}
 			{if(isPlayer _x) then {[nil,"life_fnc_updateCaptureUI",_x,false] spawn life_fnc_MP};} forEach (list(_this select 0));
