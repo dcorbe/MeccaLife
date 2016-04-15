@@ -1,8 +1,7 @@
-_query ="gangCartelControl";
+ _query = "getListZones";
 
 _queryResult = [_query,2] call DB_fnc_asyncCall;
-life_capture_list = _queryResult select 0;
-publicVariable "life_capture_list";
+life_capture_list = (call (compile_queryResult)) select 0;
 {
 if((life_capture_list select _x) select 2 >= 0.99) then {
 	_string = (life_capture_list select _x) select 0;
@@ -70,8 +69,8 @@ KBW_fnc_handleCapture = {
 			publicVariable "life_capture_list";
 			[] spawn 
 			{
-				_query = format["gangCartelSet:%1",1];
-				[_query,1] call DB_fnc_asyncCall;
+				 _query = format["updateListZones:%1",life_capture_list];
+                [_query,1] call DB_fnc_asyncCall;
 			}
 			{if(isPlayer _x) then {[nil,"life_fnc_updateCaptureUI",_x,false] spawn life_fnc_MP};} forEach (list(_this select 0));
 		};
