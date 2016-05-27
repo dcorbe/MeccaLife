@@ -1,3 +1,0 @@
-player addRating -9999999999999999999999;
-sleep 60;
-player addRating 9999999999999999999999;
