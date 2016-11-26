@@ -188,6 +188,7 @@ class CfgFunctions
 			class queryPlayerGang {};
 			class removeGang {};
 			class updateGang {};
+			class capZones {};
 		};
 		class Gangwars
 		{

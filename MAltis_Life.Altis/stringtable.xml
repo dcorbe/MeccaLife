@@ -5343,4 +5343,18 @@
 			<Original>Emergency Calls!</Original>
 		</Key>
 	</Package>
+	<Package name="NHS">
+    <Key ID="STR_NHS_Died">
+      <Original>%1 has died from there injuries.</Original>
+    </Key>
+    <Key ID="STR_NHS_Killed">
+      <Original>%1 has been heavily wounded by %2!</Original>
+    </Key>
+    <Key ID="STR_NHS_Suicide">
+      <Original>%1 has been heavily wounded!</Original>
+    </Key>
+    <Key ID="STR_NHS_PlayerRevived">
+      <Original>%1 has been revived!</Original>
+    </Key>
+  </Package>
 </Project>
