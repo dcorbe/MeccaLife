@@ -30,7 +30,7 @@ if(isPlayer _source && _source isKindOf "Man") then {
 	_curMag = currentMagazine _source;
 };
 
-if((_curWep in ["srifle_DMR_06_olive_F","srifle_DMR_03_F","arifle_MXM_Black_F","arifle_MX_Black_F","arifle_MXC_Black_F","srifle_DMR_02_F"]) && (_source getVariable ["nonLethals",true]) && (_projectile != "")) then {
+if((_curWep in ["srifle_DMR_06_olive_F","srifle_DMR_03_F","arifle_MXM_Black_F","arifle_MX_Black_F","arifle_MXC_Black_F","srifle_DMR_02_F","arifle_sdar_F"]) && (_source getVariable ["nonLethals",true]) && (_projectile != "")) then {
 	if(((getDammage _unit) >= 0.9) || (_damage >= 0.9)) then {
 		_damage = 0.001;
 		[_source] spawn life_fnc_handleDowned;
