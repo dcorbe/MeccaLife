@@ -237,7 +237,7 @@ switch (_safe) do {
                 };
             };
         };
-        sleep(_delay*30+1);
+        sleep(_delay*60);
         if(!(fed_arm getVariable["chargeplaced",false])) exitWith {};
         _bomb = "Bo_GBU12_LGB_MI10" createVehicle [getPosATL fed_arm select 0, getPosATL fed_arm select 1, (getPosATL fed_arm select 2)+0.5];
         fed_arm setVariable["chargeplaced",false,true];
