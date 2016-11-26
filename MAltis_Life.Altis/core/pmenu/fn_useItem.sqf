@@ -47,7 +47,16 @@ switch (true) do {
 		(group player) reveal fed_bank;
 		[cursorTarget] spawn life_fnc_blastingCharge;
 	};
-	
+	case (EQUAL(_item,"armblastingcharge")): {
+		player reveal fed_arm;
+		(group player) reveal fed_arm;
+		[cursorTarget] spawn life_fnc_armblastingCharge;
+	};
+	case (EQUAL(_item,"pharmblastingcharge")): {
+		player reveal fed_pharm;
+		(group player) reveal fed_pharm;
+		[cursorTarget] spawn life_fnc_pharmblastingCharge;
+	};
 	case (EQUAL(_item,"defusekit")): {
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
@@ -69,6 +78,30 @@ switch (true) do {
 		if(!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"};
 		if(([false,_item,1] call life_fnc_handleInv)) then {
 			[] spawn life_fnc_spikeStrip;
+		};
+	};
+	case (EQUAL(_item,"heroin_processed")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[] spawn life_fnc_heroine;
+		};
+	};
+	case (EQUAL(_item,"painkiller")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+			[player] spawn life_fnc_pkiller;
+		closeDialog 0;
+		};
+	};
+	case (EQUAL(_item,"adrenaline")): {
+		if(([false,_item,1] call life_fnc_handleInv)) then {
+		[cursorTarget] spawn life_fnc_adrenaline;
+		closeDialog 0;
+		};
+	};
+	case (EQUAL(_item,"cyanide")): {
+	if(([false,_item,1] call life_fnc_handleInv)) then {
+			if !(alive cursortarget) then {
+				[cursorTarget] spawn life_fnc_execute;
+			};
 		};
 	};
 /*
@@ -99,15 +132,11 @@ switch (true) do {
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
-	case (EQUAL(_item,"heroin_processed")): {
-		if(([false,_item,1] call life_fnc_handleInv)) then {
-			[] spawn life_fnc_heroine;
-		};
-	};
+	
 	
 	case (EQUAL(_item,"cocaine_processed")): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
-			[] spawn life_fnc_cocainep;
+			[] spawn life_fnc_cocaine;
 		};
 	};
 

@@ -42,8 +42,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 			hint format[localize "STR_Shop_Virt_BoughtGang",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
 			_funds = grpPlayer getVariable "gang_bank";
 			_funds = _funds - (_price * _amount);
-			grpPlayer setVariable["gang_bank",_funds,true];
-			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
+			[[life_gangid,-1,_funds,[]],"life_fnc_updateGangInfo",true,false] spawn life_fnc_MP;
 		} else {
 			if((_price * _amount) > life_cash) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,(localize _name),[(_price * _amount)] call life_fnc_numberText];
@@ -84,7 +83,11 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 	};
 	
 	[] call life_fnc_virt_update;
-};
+
+
+
+
+
 /* commented out for performance
 [0] call SOCK_fnc_updatePartial;
 if (playerSide != west) then {

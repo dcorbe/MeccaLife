@@ -28,7 +28,15 @@ class Life_Client_Core
 		class welcomeNotification {};
 		class survival {};
 	};
-	
+		class Taxi
+	{
+		file = "core\taxi";
+		class taxi_call {};
+		class taxi_respond {};
+		class taxi_acceptCall {};
+		class finishRide {};
+		class openTaxiMenu {};
+	};
 	class tempGangs
 	{
 		file = "core\tempGangs";
@@ -43,14 +51,7 @@ class Life_Client_Core
 		class lockGang {};
 		class unlockGang {};
 	};	
-	class Gangwars
-    {
-  	file = "Gangwars";
-    class AS_GANG_openMenu {};
-   	class AS_GANG_receive {};
-   	class AS_GANG_question {};
-    class AS_GANG_answer {};
-   };
+	
 	
 	class Admin
 	{
@@ -90,6 +91,9 @@ class Life_Client_Core
 		class medicSiren {};
 		class newLifeRule {};
 		class pulloutDead {};
+		class execute{};
+		class exannounce {};
+		class adrenaline {};
 	};
 	
 	class Actions
@@ -136,6 +140,8 @@ class Life_Client_Core
 		class suicideBomb {};
 		class douevenlift {};
 		class douevenliftjail {};
+		class collectcartel {};
+		
 	};
 	
 	class Paintball
@@ -301,6 +307,8 @@ class Life_Client_Core
 		class robPerson {};
 		class removeLicenses {};
 		class demoChargeTimer {};
+		class armdemoChargeTimer {};
+		class pharmdemoChargeTimer {};
 		class civLoadout {};
 		class civInteractionMenu {}; //civ interaction menu
 		class freezePlayer {};
@@ -436,6 +444,8 @@ class Life_Client_Core
 		class flashbang {};
 		class boltcutter {};
 		class blastingCharge {};
+		class armblastingCharge {};
+		class pharmblastingCharge {};
 		class defuseKit {};
 		class storageBox {};
 		class heroine {};
@@ -449,6 +459,7 @@ class Life_Client_Core
 		class drinkbeer {};
 		class drinkmoonshine {};
 		class drinkwhiskey {};
+		class pkiller {};
 	};
 	
 	class Scripts

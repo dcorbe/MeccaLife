@@ -10,10 +10,10 @@ private["_mode","_group","_groupID","_bank","_maxMembers","_members","_query","_
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _group = [_this,1,grpNull,[grpNull]] call BIS_fnc_param;
 
-if(isNull _group) exitWith {}; //FAIL
+if(isNull _group && !(_mode == 5)) exitWith {}; //FAIL
 
 _groupID = _group getVariable["gang_id",-1];
-if(_groupID == -1) exitWith {};
+if(_groupID == -1 && !(_mode == 5)) exitWith {};
 
 switch (_mode) do {
 	case 0: {
@@ -47,10 +47,19 @@ switch (_mode) do {
 	case 5: {
 		_gang = [_this,2,"",[""]] call BIS_fnc_param;
 		_toAdd = [_this,3,0,[0]] call BIS_fnc_param;
-		_query =  format["gangBankInfoUpdate:%1:%2",_bank,_groupID];
+		 diag_log [_gang];
+		 diag_log [_toAdd];
+		_query =  format["cartelPayout:%1:%2",_toAdd,_gang];
 		_group = grpNull;
-		{if(_gang == (_x getVariable["gang_name",""])) exitWith {_group = _x}} forEach allGroups;
-		if(!isNull _group) then { _group setVariable["gang_bank",((_group getVariable["gang_bank",0]) + _toAdd),true]; };
+		{if(_gang == (_x getVariable["life_gangname",""])) exitWith {_group = _x}} forEach allGroups;
+		if(!isNull _group) then { _group setVariable["life_gangbank",((_group getVariable["life_gangbank",0]) + _toAdd),true];diag_log format ["debuggangbank %1",life_gangbank]; };
+	};
+	case 6:{
+	_gang = [_this,2,"",[""]] call BIS_fnc_param;
+	_query = format["getgangBankInfo:%1",_gname];
+	_queryResult = [_query,2] call DB_fnc_asyncCall;
+	
+	
 	};
 };
 

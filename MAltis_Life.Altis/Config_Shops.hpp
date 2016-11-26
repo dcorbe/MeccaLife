@@ -53,7 +53,7 @@ class WeaponShops {
         };
     };
     class rebel {
-        name = "Mohammed's Jihadi Shop";
+        name = "Arms Cartel Dealer";
         side = "civ";
         license = "rebel";
         level = -1;
@@ -104,8 +104,8 @@ class WeaponShops {
             { "srifle_DMR_01_F", "", 80000, { "", "", -1 } },
             { "10Rnd_762x54_Mag", "", 500, { "", "", -1 } },
 			
-            { "srifle_LRR_LRPS_F", "", 1000000, { "", "", -1 } },
-            { "7Rnd_408_Mag", "", 200000, { "", "", -1 } },
+			
+			
 				
 			{ "LMG_Mk200_F", "", 150000, { "", "", -1 } },
             { "200Rnd_65x39_cased_Box", "", 50000, { "", "", -1 } },
@@ -121,9 +121,32 @@ class WeaponShops {
 			{ "bipod_01_F_blk", "Black Bipod", 35000, { "", "", -1 } },
 			{ "bipod_01_F_snd", "Desert Bipod", 35000, { "", "", -1 } },
 			{ "bipod_01_F_mtp", "Woodland Bipod", 35000, { "", "", -1 } },
+
+			{ "arifle_AKS_F", "", 75000, { "", "", -1 } },
+			{ "arifle_AK12_F", "", 150000, { "", "", -1 } },
+			{ "arifle_AKM_F", "", 125000, { "", "", -1 } },
+		    { "arifle_SPAR_03_khk_F", "", 125000, { "", "", -1 } },
+			{ "arifle_SPAR_03_snd_F", "", 125000, { "", "", -1 } },
+			{ "srifle_DMR_07_ghex_F", "", 125000, { "", "", -1 } },
+			{ "srifle_DMR_07_hex_F", "", 125000, { "", "", -1 } },
+			{ "arifle_SPAR_01_snd_F", "", 125000, { "", "", -1 } },
+			{ "arifle_SPAR_01_khk_F", "", 125000, { "", "", -1 } },
+			{ "arifle_CTAR_blk_F", "", 125000, { "", "", -1 } },
+		    { "100Rnd_580x42_Mag_F", "", 500, { "", "", -1 } },
+			{ "100Rnd_580x42_Mag_Tracer_F", "", 500, { "", "", -1 } },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 500, { "", "", -1 } },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 500, { "", "", -1 } },
+			{ "200Rnd_556x45_Box_F", "", 500, { "", "", -1 } },
+			{ "20Rnd_650x39_Cased_Mag_F", "", 500, { "", "", -1 } },
+			{ "30Rnd_545x39_Mag_F", "", 500, { "", "", -1 } },
+			{ "30Rnd_556x45_Stanag", "", 500, { "", "", -1 } },
+			{ "30Rnd_580x42_Mag_F", "", 500, { "", "", -1 } },
+			{ "30Rnd_65x39_caseless_green", "", 500, { "", "", -1 } },
+			{ "30Rnd_762x39_Mag_F", "", 500, { "", "", -1 } },
 			
-			
-            { "Titan_AA", "", 200000, { "", "", -1 } },
+			{ "30Rnd_9x21_Mag_SMG_02", "", 500, { "", "", -1 } },
+		
+		
             { "acc_flashlight", "", 500, { "", "", -1 } },
             { "optic_ACO_grn", "", 2500, { "", "", -1 } },	
             { "optic_Aco", "", 2500, { "", "", -1 } },
@@ -140,85 +163,6 @@ class WeaponShops {
             { "SmokeShellOrange", "", 1000, { "", "", -1 } },
             { "HandGrenade", "", 50000, { "", "", -1 } },		
             { "SLAMDirectionalMine_Wire_Mag", "", 275000, { "", "", -1 } }										
-        };
-    };
-	
-    class rebelA {
-        name = "Mohammed's Jihadi Shop";
-        side = "civ";
-        license = "rebel";
-        level = -1;
-        msg = "";
-        items[] = {
-			{ "FirstAidKit", "", 500, { "", "", -1 } },
-			{ "ToolKit", "", 500, { "", "", -1 } },
-			{ "ItemGPS", "", 50, { "", "", -1 } },
-			{ "ItemMap", "", 50, { "", "", -1 } },
-			{ "ItemRadio", "", 50, { "", "", -1 } },
-			{ "ItemCompass", "", 50, { "", "", -1 } },
-			{ "MineDetector", "", 10000, { "", "", -1 } },
-            { "Binocular", "", 1000, { "", "", -1 } },
-			{ "Rangefinder", "",5000, { "", "", -1 } },
-            { "NVGoggles_INDEP", "", 1000, { "", "", -1 } },
-            { "NVGoggles", "", 1000, { "", "", -1 } },
-			
-            { "hgun_Rook40_F", "", 500, { "", "", -1 } },
-            { "30Rnd_9x21_Mag", "", 500, { "", "", -1 } },
-			
-            { "hgun_PDW2000_F", "", 10000, { "", "", -1 } },
-            { "30Rnd_9x21_Mag", "", 500, { "", "", -1 } },
-			
-            { "arifle_sdar_F", "", 25000, { "", "", -1 } },
-            { "20Rnd_556x45_UW_mag", "", 500, { "", "", -1 } },
-			
-            { "hgun_Pistol_heavy_02_F", "", 25000, { "", "", -1 } },
-            { "6Rnd_45ACP_Cylinder", "", 500, { "", "", -1 } },
-			
-            { "arifle_Mk20C_F", "", 30000, { "", "", -1 } },
-            { "30Rnd_556x45_Stanag", "", 500, { "", "", -1 } },
-			
-            { "arifle_TRG20_F", "", 20000, { "", "", -1 } },
-            { "30Rnd_556x45_Stanag", "", 500, { "", "", -1 } },
-			
-            { "arifle_TRG21_F", "", 20000, { "", "", -1 } },
-            { "30Rnd_556x45_Stanag", "", 500, { "", "", -1 } },
-			
-            { "arifle_Katiba_F", "", 35000, { "", "", -1 } },
-            { "30Rnd_65x39_caseless_green", "", 500, { "", "", -1 } },
-			
-            { "SMG_01_F", "", 50000, { "", "", -1 } },
-            { "30Rnd_45ACP_Mag_SMG_01", "", 500, { "", "", -1 } },
-			
-            { "srifle_DMR_01_F", "", 80000, { "", "", -1 } },
-            { "10Rnd_762x54_Mag", "", 500, { "", "", -1 } },
-			
-            { "srifle_EBR_F", "", 100000, { "", "", -1 } },
-            { "20Rnd_762x51_Mag", "", 500, { "", "", -1 } },
-			
-            { "srifle_LRR_LRPS_F", "", 1200000, { "", "", -1 } },
-            { "7Rnd_408_Mag", "", 500000, { "", "", -1 } },
-			
-			{ "LMG_Mk200_F", "", 150000, { "", "", -1 } },
-            { "200Rnd_65x39_cased_Box", "", 50000, { "", "", -1 } },
-			{ "200Rnd_65x39_cased_Box_Tracer", "", 50000, { "", "", -1 } },
-				
-			
-            { "Titan_AA", "", 500000, { "", "", -1 } },
-            { "acc_flashlight", "", 500, { "", "", -1 } },
-            { "optic_ACO_grn", "", 10000, { "", "", -1 } },	
-			{ "optic_Hamr", "", 4000, { "", "", -1 } },
-            { "optic_Aco", "", 10000, { "", "", -1 } },
-            { "optic_MRCO", "", 20000, { "", "", -1 } },		
-            { "optic_Holosight", "", 25000, { "", "", -1 } },
-            { "optic_Arco", "", 20000, { "", "", -1 } },		
-            { "acc_pointer_IR", "", 500, { "", "", -1 } },
-            { "SmokeShell", "", 1000, { "", "", -1 } },		
-            { "SmokeShellRed", "", 1000, { "", "", -1 } },
-            { "SmokeShellGreen", "", 1000, { "", "", -1 } },		
-            { "SmokeShellYellow", "", 1000, { "", "", -1 } },
-            { "SmokeShellPurple", "", 1000, { "", "", -1 } },		
-            { "SmokeShellOrange", "", 1000, { "", "", -1 } },
-            { "HandGrenade", "", 50000, { "", "", -1 } }											
         };
     };
 	
@@ -321,19 +265,19 @@ class WeaponShops {
         level = -1;
         msg = "";
         items[] = {
-			{ "V_TacVest_khk", "", 20000, { "", "", -1 } },
+			{ "V_TacVest_khk", "", 30000, { "", "", -1 } },
 			{ "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
 			{ "V_HarnessO_brn", "", 7000, { "", "", -1 } },
 			{ "V_Rangemaster_belt", "", 1800, { "", "", -1 } },
-			{ "V_PlateCarrier2_rgr", "", 50000, { "", "", -1 } },
+			{ "V_PlateCarrier2_rgr", "", 100000, { "", "", -1 } },
 			{ "V_RebreatherB", "", 5000, { "", "", -1 } },
 			{ "V_RebreatherIA", "", 5000, { "", "", -1 } },
 			{ "V_RebreatherIR", "", 5000, { "", "", -1 } },
 			{ "V_HarnessOGL_gry", "SuicideVest", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_mtp", "Special Carrier", 250000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_rgr", "Special Carrier", 250000, { "", "", -1 } },
+			{ "V_PlateCarrierSpec_mtp", "Special Carrier", 550000, { "", "", -1 } },
+			{ "V_PlateCarrierSpec_rgr", "Special Carrier", 550000, { "", "", -1 } },
 			{ "V_PlateCarrierGL_rgr", "Carrier GL Green", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierIAGL_dgtl", "Carrier Rig Digi", 350000, { "life_donator", "SCALAR", 2 } }, 
+			{ "V_PlateCarrierIAGL_dgtl", "Carrier Rig Digi", 550000, { "life_donator", "SCALAR", 2 } }, 
 			{ "V_PlateCarrierIAGL_oli", "Carrier GL Rig olive", 350000, { "life_donator", "SCALAR", 2 } }
         };
     };

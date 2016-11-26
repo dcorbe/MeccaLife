@@ -1,8 +1,8 @@
 /* Price Coefficients */
-#define ins 0.9
-#define chop 0.8
+#define ins 0.8
+#define chop 0.5
 #define sell 0.9
-#define store 0.05
+#define store 0.02
 /* End Price Coefficients */
 
 /* Vehicle Prices */
@@ -18,14 +18,14 @@
 #define pm900med 200000
 #define porcamed 500000
 
-#define pboxer 200000
-#define pzamaktrans 135000
-#define pzamakcov 250000
-#define phemtttrans 300000
-#define ptempesttrans 600000
-#define ptempestcov 750000
-#define phemttbox 600000
-#define ptempestdev 800000
+#define pboxer 500000
+#define pzamaktrans 535000
+#define pzamakcov 750000
+#define phemtttrans 1100000
+#define ptempesttrans 1300000
+#define ptempestcov 1550000
+#define phemttbox 1600000
+#define ptempestdev 1700000
 #define ftruck 300000
 
 
@@ -35,16 +35,16 @@
 #define poffroadcop 35000
 #define psuvcop 30000
 #define phuntercop 250000
-#define pmh9cop 250000
+#define pmh9cop 550000
 #define pghosthawkcop 500000
 #define pmarid 750000
 
-#define pmh9civ 325000
+#define pmh9civ 352500
 #define pm900 250000
-#define porcaciv 750000
-#define ptarutrans 1800000
-#define ptarubench 1500000
-#define ptarufuel 1300000
+#define porcaciv 675000
+#define ptarutrans 1350000
+#define ptarubench 1350000
+#define ptarufuel 1000000
 
 #define psdv 100000
 #define prescueboat 5000
@@ -52,7 +52,7 @@
 #define passaultboat 3000
 
 #define huron 1500000
-#define mohawk 1400000
+#define mohawk 740000
 
 #define pstrider 150000
 /* End Vehicle Prices */
@@ -137,9 +137,16 @@ class CarShops {
 			{ "I_Quadbike_01_F", pquadbike, "" }, 
 			{ "C_Offroad_01_F", poffroadcop, "", { "life_coplevel", 2 } },
 			{ "C_SUV_01_F", psuvcop, "", { "life_coplevel", 2 } },
-			{ "B_MRAP_01_F", phuntercop, "", { "life_coplevel", 5 } },
+			{ "B_MRAP_01_F", phuntercop, "", { "life_coplevel", 4 } },
 			{ "O_APC_Wheeled_02_rcws_F", pmarid, "", { "life_swatlevel", 1 } },
 			{ "C_Hatchback_01_sport_F", phatchbacksport, "", { "life_coplevel", 2 } }
+		};
+	};
+	class taxi_car {
+		side = "civ";
+		vehicles[] = {
+			
+			{ "C_Hatchback_01_sport_F", phatchbacksport, "Taxi" }
 		};
 	};
 
@@ -173,8 +180,10 @@ class CarShops {
 	class cop_airhq {
 		side = "cop";
 		vehicles[] = {
+			{ "I_Heli_light_03_unarmed_F", pghosthawkcop, "", { "life_coplevel", 6 } },
+			{ "O_Heli_Light_02_unarmed_F", pghosthawkcop, "", { "life_coplevel", 3 } },
 			{ "B_Heli_Light_01_F", pmh9cop, "", { "life_coplevel", 2 } },
-			{ "B_Heli_Transport_01_F", pghosthawkcop, "", { "life_coplevel", 4 } }
+			{ "B_Heli_Transport_01_F", pghosthawkcop, "", { "life_coplevel", 5 } }
 		};
 	};
 
@@ -583,6 +592,9 @@ class CfgVehicles {
             } },
             { "Police", "cop", {
                 "textures\policehatch.jpg"
+            } },
+			{ "Taxi", "civ", {
+                "textures\TaxiHatch.jpg"
             } },
 			{ "Medic", "med", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa"

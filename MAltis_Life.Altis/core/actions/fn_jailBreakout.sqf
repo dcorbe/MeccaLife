@@ -50,7 +50,6 @@ _time = time + (12 * 60);
 
 jailDefused = false;
 
-//publicVariable "jailDefused";
 
 _ok = true;
 while {true} do {
@@ -68,8 +67,9 @@ if(_ok) then {
 	[[1,"The jailbreak ended with people being broken out. They are now on the run from the law!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP; //Give the cops a hint
 	[[4,"The jailbreak ended with people being broken out. They are now on the run."],"life_fnc_broadcast",true,false] spawn life_fnc_MP; //Give everyone a AAN SHIT
 	[[profileName],"life_fnc_jailBreakoutCompleted",true,false] spawn life_fnc_MP;
+	
 } else {
 	hint "You failed to break out any prisoners.";	
 	[[1,"The jailbreak ended with no people being broken out. Good work police!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP; //Give the cops a hint
-	[[4,"The jailbreak ended with no people being broken out."],"life_fnc_broadcast",true,false] spawn life_fnc_MP; //Give everyone a AAN SHIT
+	[[4,"The jailbreak wast stoped by the M.S.T."],"life_fnc_broadcast",true,false] spawn life_fnc_MP; //Give everyone a AAN SHIT
 };

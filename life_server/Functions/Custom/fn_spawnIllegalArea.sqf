@@ -40,7 +40,7 @@ _marker = createMarker ["cocaine_redZone", _Pos];
 "cocaine_redZone" setMarkerBrush "DiagGrid";
  
 //Create heroine area
-_heli = "Land_ClutterCutter_small_F" createVehicle (["mrkheroinGreen",0,["mrkheroinRed","mrkheroinRed_1","mrkcocaineRed_2","mrkcocaineRed_3","mrkcocaineRed_4"]] call SHK_pos);
+_heli = "Land_ClutterCutter_small_F" createVehicle (["mrkheroinGreen",0,["mrkheroinRed","mrkheroinRed_1","mrkheroinRed_2","mrkheroinRed_3","mrkheroinRed_4","mrkheroinRed_6","mrkheroinRed_7"]] call SHK_pos);
 _heli setPosASLW [(position _heli) select 0, (position _heli) select 1, -5.5];
 _heli enableSimulation false;
  

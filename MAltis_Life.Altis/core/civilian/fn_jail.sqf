@@ -21,7 +21,7 @@ player SVAR ["transporting",false,true];
 
 titleText[localize "STR_Jail_Warn","PLAIN"];
 hint localize "STR_Jail_LicenseNOTF";
-player setPosAsl [16682,13610,18.5];
+player setPosAsl [16734,13619,12.5];
 
 if(_bad) then {
 	waitUntil {alive player};
@@ -29,9 +29,7 @@ if(_bad) then {
 };
 
 //Check to make sure they goto check
-if(player distance (getMarkerPos "jail_marker") > 40) then {
-player setPosAsl [16682,13610,18.5];
-};
+
  
 
 [1] call life_fnc_removeLicenses;

@@ -8,7 +8,7 @@
 			<Original>Altis Police Department Shop</Original>
 		</Key>
 		<Key ID="STR_Shops_C_Rebel">
-			<Original>Mohammed's Jihadi Shop</Original>
+			<Original>Arm's Cartel Dealer</Original>
 		</Key>
 		<Key ID="STR_Shops_C_Diving">
 			<Original>Steve's Diving Shop</Original>
@@ -120,6 +120,11 @@
 		</Key>
 		<Key ID="STR_Shops_Law">
 			<Original>Law School</Original>
+		</Key>
+	</Package>
+	<Package name="notifications">
+		<Key ID="STR_NOTF_Lethal">
+			<Original>%1 has received a lethal dose of cyanide and can no longer be revived</Original>
 		</Key>
 	</Package>
 	<Package name="Global">
@@ -506,8 +511,8 @@
 			<Italian>Non hai abbastanza fondi con te.</Italian>
 			<Portuguese>Você não tem todo esse dinheiro.</Portuguese>
  		</Key>
- 		<Key ID="STR_ATM_DepositGang">
- 			<Original>You have deposited $%1 into your gangs bank account</Original>
+ 		<Key ID="STR_ATM_WithdrawGang">
+ 			<Original>You have withdrawn $%1 from your gangs bank account</Original>
 			<German>Du hast $%1 auf dein Gang Konto überwiesen</German>
  			<French>Vous avez déposé $%1 sur le compte bancaire de votre gang.</French>
 			<Italian>Hai despoitato €%1 nel conto bancario della tua gang</Italian>
@@ -528,6 +533,13 @@
 			<French>SMS à Envoyer :</French>
 			<Italian>Messaggio da mandare:</Italian>
 			<Portuguese>Mensagem a enviar:</Portuguese>
+		</Key>
+		<Key ID="STR_CELL_TextTaxi">
+			<Original>Taxi</Original>
+			<German>Taxi</German>
+			<French>Taxi</French>
+			<Italian>Taxi</Italian>
+			<Portuguese>Taxi</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
@@ -1163,6 +1175,13 @@
 			<French>Objets Actuels</French>
 			<Italian>Oggetti Attuali</Italian>
 			<Portuguese>Items Atuais</Portuguese>
+		</Key>
+		<Key ID="STR_PM_TaxiMenu">
+			<Original>Taxi</Original>
+			<German>Taxi</German>
+			<French>Taxi</French>
+			<Italian>Taxi</Italian>
+			<Portuguese>Taxi</Portuguese>
 		</Key>
 		<Key ID="STR_PM_Licenses">
 			<Original>Licenses</Original>
@@ -1994,7 +2013,11 @@
 			<Italian>Non puoi riusare così rapidamente il tasto azione!</Italian>
 			<Portuguese>Você ão pode usar a tecla de ação repetidamente!</Portuguese>
  		</Key>
- 		<Key ID="STR_NOTF_NotEnoughFunds">
+ 		<Key ID="STR_NOTF_Notrank">
+ 			<Original>You are not the gangs leader</Original>
+			
+ 		</Key>
+		<Key ID="STR_NOTF_NotEnoughFunds">
  			<Original>You do not have enough funds in your bank account</Original>
 			<German>Du hast nicht genug Geld auf deinem Bankkonto</German>
  			<French>Vous n'avez pas assez de fond dans votre compte bancaire</French>
@@ -2266,6 +2289,13 @@
 			<French>Il faut au minimum 5 flic pour continuer</French>
 			<Italian>Servono almeno 5 poliziotti online per continuare.</Italian>
 			<Portuguese>É necessário ter pelo menos 5 Policiais online para continuar.</Portuguese>
+		</Key>
+		<Key ID="STR_Civ_NotEnoughCopspharm">
+			<Original>There needs to be 2 or more cops online to continue.</Original>
+			<German>Es müssen 2 oder mehr Polizisten online sein, um fortfahren zu können.</German>
+			<French>Il faut au minimum 2 flic pour continuer</French>
+			<Italian>Servono almeno 2 poliziotti online per continuare.</Italian>
+			<Portuguese>É necessário ter pelo menos 2 Policiais online para continuar.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_SafeInv">
 			<Original>Safe Inventory</Original>
@@ -3084,6 +3114,15 @@
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
+		<Key ID="STR_Item_Methp">
+			<Original>Crystal Red Meth</Original>
+		</Key>
+		<Key ID="STR_Item_Mash">
+			<Original>Corn And Sugar</Original>
+		</Key>
+		<Key ID="STR_Item_Methu">
+			<Original>Pharmaceuticals</Original>
+		</Key>
 		<Key ID="STR_Item_Oil">
 			<Original>Oil</Original>
 			<German>Öl</German>
@@ -3491,6 +3530,20 @@
 			<Italian>Carica Esplosiva</Italian>
 			<Portuguese>Explosivo</Portuguese>
 		</Key>
+		<Key ID="STR_Item_armBCharge">
+			<Original>Armory Blasting Charge</Original>
+			<German>Sprengladung</German>
+			<French>Charge de dynamite</French>
+			<Italian>Carica Esplosiva</Italian>
+			<Portuguese>Explosivo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_pharmBCharge">
+			<Original>Pharmaceutical Blasting Charge</Original>
+			<German>Sprengladung</German>
+			<French>Charge de dynamite</French>
+			<Italian>Carica Esplosiva</Italian>
+			<Portuguese>Explosivo</Portuguese>
+		</Key>
 		<Key ID="STR_Item_BCutter">
 			<Original>Bolt Cutter</Original>
 			<German>Bolzenschneider</German>
@@ -3498,6 +3551,12 @@
 			<Italian>Tronchese</Italian>
 			<Portuguese>Alicate</Portuguese>
 		</Key>
+		<key id="STR_Item_pkiller">
+			<Original>Pain Killer</Original>
+		</key>
+		<key id="STR_Item_cyanide">
+			<Original>Cyanide Injection</Original>
+		</key>
 		<Key ID="STR_Item_DefuseKit">
 			<Original>Bomb Defuse Kit</Original>
 			<German>Bombenentschärfungskit</German>
@@ -3543,6 +3602,15 @@
 		<Key ID="STR_Item_Ziptie">
 			<Original>Ziptie</Original>
 		</Key>
+		<Key ID="STR_Item_adrenaline">
+			<Original>Adrenaline Revive</Original>
+		</Key>
+		<Key ID="STR_Item_cyanide">
+			<Original>Cyanide</Original>
+		</Key>
+		<Key ID="STR_Item_pkiller">
+			<Original>Pain Killers</Original>
+		</Key>
 		<Key ID="STR_Item_Underwatercharge">
 			<Original>Under Water Charge</Original>
 		</Key>
@@ -3554,6 +3622,9 @@
 		</Key>
 		<Key ID="STR_Item_bottledwhiskey">
 			<Original>Bottled Whiskey</Original>
+		</Key>
+		<Key ID="STR_Item_kegshine">
+			<Original>Keg of Moonshine</Original>
 		</Key>
 		<Key ID="STR_Item_bottledshine">
 			<Original>Bottled Shine</Original>
@@ -3684,8 +3755,17 @@
 			<Italian>Processo Sale</Italian>
 			<Portuguese>Processamento de Sal</Portuguese>
 		</Key>
+		<Key ID="STR_License_Mash">
+			<Original>Moonshine Recipe</Original>
+		</Key>
+		<Key ID="STR_License_Kegshine">
+			<Original>Bottling Technique</Original>
+		</Key>
 		<Key ID="STR_License_Magicm">
 			<Original>Mushroom Preparation</Original>
+		</Key>
+		<Key ID="STR_License_Meth">
+			<Original>Street Chemistry Degree</Original>
 		</Key>
 		<Key ID="STR_License_Cocaine">
 			<Original>Cocaine Training</Original>
@@ -3763,6 +3843,16 @@
 			<Italian>Una carica esplosiva è stata piazzata sulla cassaforte della Riserva Federale, puoi cercare di disinnescarla prima che scada il tempo!</Italian>
 			<Portuguese>O explosivo foi colocado no cofre , Você tem até o tempo acabar para desarmar o explosivo.</Portuguese>
 		</Key>
+		<Key ID="STR_ISTR_ABlast_Placed">
+			<Original>A blasting charge has been placed on the federal armory vault, You have till the clock runs out to disarm the charge!</Original>
+			<German>Eine Sprengladung wurde am Safe angebracht. Du hast Zeit, bis die Uhr abläuft, um die Ladung zu entschärfen!</German>
+			<French>Une charge de dynamite a été placé sur le coffre des réserves fédérales, Vous avez jusqu'au temps imparti pour désarmorcer la charge!</French>
+			<Italian>Una carica esplosiva è stata piazzata sulla cassaforte della Riserva Federale, puoi cercare di disinnescarla prima che scada il tempo!</Italian>
+			<Portuguese>O explosivo foi colocado no cofre , Você tem até o tempo acabar para desarmar o explosivo.</Portuguese>
+		</Key>
+		<Key ID="STR_ISTR_PABlast_Placed">
+			<Original>A blasting charge has been placed on the Mecca Pharmaceutical plant, You have till the clock runs out to disarm the charge!</Original>
+		</Key>
 		<Key ID="STR_ISTR_Blast_KeepOff">
 			<Original>The timer is ticking! Keep the cops away from the vault!</Original>
 			<German>Der Timer läuft! Halte die Polizei von Safe fern!</German>
@@ -3793,6 +3883,13 @@
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
 			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
+			<German>!!!!! JEMAND BRICHT IN DIE ZENTRALBANK EIN !!!!!!</German>
+			<French>!!!!! QUELQU'UN TENTE DE S'INTRODUIRe DANS LA RÈSERVE FÈDÈRALE !!!!!!</French>
+			<Italian>!!!!!! QUALCUNO STA CERCANDO DI INTRODURSI NELLA RISERVA FEDERALE !!!!!!</Italian>
+			<Portuguese>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Portuguese>
+		</Key>
+		<Key ID="STR_ISTR_Bolt_AlertArm">
+			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL ARMORY !!!!!!</Original>
 			<German>!!!!! JEMAND BRICHT IN DIE ZENTRALBANK EIN !!!!!!</German>
 			<French>!!!!! QUELQU'UN TENTE DE S'INTRODUIRe DANS LA RÈSERVE FÈDÈRALE !!!!!!</French>
 			<Italian>!!!!!! QUALCUNO STA CERCANDO DI INTRODURSI NELLA RISERVA FEDERALE !!!!!!</Italian>
@@ -4071,6 +4168,15 @@
 		</Key>
 		<Key ID="STR_Process_Magicm">
 			<Original>Drying and curing mushrooms</Original>
+		</Key>
+		<Key ID="STR_Process_Shine">
+			<Original>Distilling White Lighting</Original>
+		</Key>
+		<Key ID="STR_Process_Bshine">
+			<Original>Bottling White Lighting</Original>
+		</Key>
+		<Key ID="STR_Process_Meth">
+			<Original>Processing Meth</Original>
 		</Key>
 		<Key ID="STR_Process_Cigarette">
 			<Original>Rolling Illegal Bandit Cigarettes</Original>
@@ -4460,11 +4566,8 @@
 			<Portuguese>Apagar Luz</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_DepositToGang">
-			<Original>Deposit To Gang</Original>
-			<German>Auf Gang-Konto einzahlen</German>
-			<French>Déposer pour le gang</French>
-			<Italian>Deposita alla Gang</Italian>
-			<Portuguese>Depositar para a Gangue</Portuguese>
+			<Original>Withdraw from Gang</Original>
+			
 		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">

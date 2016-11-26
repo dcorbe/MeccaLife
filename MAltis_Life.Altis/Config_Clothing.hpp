@@ -115,7 +115,7 @@ class Clothing {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_PilotHelmetFighter_B", "Teargas Helmet", 1000, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_Cap_police", "", 1000, { "life_coplevel", "SCALAR", 1 } },
-			{ "H_Beret_blk_POLICE", "", 1000, { "life_coplevel", "SCALAR", 2 } },
+			{ "H_Beret_blk_POLICE", "", 1000, { "life_coplevel", "SCALAR", 3 } },
 			{ "H_Beret_02", "", 1000, { "life_coplevel", "SCALAR", 4 } },
 			{ "H_Beret_Colonel", "", 1000, { "life_coplevel", "SCALAR", 7 } }
 		};

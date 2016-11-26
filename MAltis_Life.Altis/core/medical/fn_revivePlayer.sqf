@@ -11,6 +11,7 @@ _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _incar = [_this,1,false,[false]] call BIS_fnc_param;
 _ploc = [_this,2,[],[[]]] call BIS_fnc_param;
 if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
+if((_target getVariable "executed")) exitWith {hint "This player has received a lethal dose of cyanide and cannot be saved"};
 _requested = _target GVAR ["requestMedic",false];
 if(!_requested) exitWith {hint "This player did not request a medic."};
 _revivable = _target GVAR ["Revive",FALSE];

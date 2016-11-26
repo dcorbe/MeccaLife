@@ -106,17 +106,6 @@ if(!(EQUAL(life_server_extDB_notLoaded,""))) exitWith {}; //extDB did not fully 
 master_group attachTo[bank_obj,[0,0,0]];
 onMapSingleClick "if(_alt) then {vehicle player setPos _pos};"; //Local debug for myself
 
-{
-	_hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
-	_hs setDir (markerDir _x);
-	_hs setPosATL (getMarkerPos _x);
-	_var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
-	_var attachTo [_hs, [4.69775,32.6045,-0.1125]];
-	detach _var;
-	_var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
-	_var attachTo [_hs, [-28.0336,-10.0317,0.0889387]];
-	detach _var;
-} foreach ["hospital_2","hospital_3"];
 
 {
 	if(!isPlayer _x) then {
@@ -137,7 +126,7 @@ life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
-life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
+life_radio_west =  [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 
@@ -174,9 +163,9 @@ heli_safe setVariable["cargo",round(random 50),true];
 pb_spieler = [];
 pb_spielstatus = 0;
 pb_maxspieler = 10;
-execVM "\life_server\Functions\paintball\arena_paintball.sqf";
+
 [] execVM "\life_server\Functions\pauction\fn_SAH_looper.sqf";
-[] execVM "\life_server\Functions\Gangwars\init.sqf";
+
 
 [] spawn
 {
@@ -189,9 +178,21 @@ execVM "\life_server\Functions\paintball\arena_paintball.sqf";
 		
 		{
 			_x setVariable["sellers",[],true];
-		} foreach [Dealer_1,Dealer_2,Dealer_3];
+		} foreach [Dealer_1,Dealer_2,Dealer_3,Dealer_4,Dealer_5,Dealer_6];
 	};
 };
+master_group attachTo[bank_obj,[0,0,0]];
+{
+	_hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
+	_hs setDir (markerDir _x);
+	_hs setPosATL (getMarkerPos _x);
+	_var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
+	_var attachTo [_hs, [4.69775,32.6045,-0.1125]];
+	detach _var;
+	_var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
+	_var attachTo [_hs, [-28.0336,-10.0317,0.0889387]];
+	detach _var;
+} foreach ["hospital_2","hospital_3"];
 
 [] spawn TON_fnc_initHouses;
 
@@ -204,13 +205,22 @@ for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,t
 _rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
 _dome allowDamage false;
+/* Setup the federal Armory building(s) */
+private["_dome","_rsb"];
+_armdome = nearestObject [[getPosATL fed_arm select 0, getPosATL fed_arm select 1, 0],"Land_Dome_Small_F"];
+_rsbarm = nearestObject [[getPosATL fed_arm select 0, getPosATL fed_arm select 1, 0],"Land_Cargo_HQ_V1_F"];
+for "_i" from 1 to 3 do {_armdome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _armdome animate [format["Door_%1_rot",_i],0];};
+_rsbarm setVariable["bis_disabled_Door_1",1,true];
+_rsbarm setVariable["bis_disabled_Door_2",1,true];
+_rsbarm allowDamage false;
+_armdome allowDamage false;
 setDate [2015, 6, 25, 8, 0];
 /* Tell clients that the server is ready and is accepting queries */
 life_server_isReady = true;
 PVAR_ALL("life_server_isReady");
 
-/* Initialize hunting zone(s) */
-["hunting_zone",30] spawn TON_fnc_huntingZone;
+
+
 
 /* Initialize the economy */
 
@@ -222,7 +232,7 @@ publicVariable "wantedList";
 [] spawn {
 	while {true} do {
 		life_wantedsync = time;
-		sleep (3*60);
+		sleep (4*60);
 		[] spawn life_fnc_wantedSyncList;
 	};
 };

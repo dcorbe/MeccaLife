@@ -4,7 +4,7 @@
 private["_vault"];
 _vault = _this select 0;
 if(!(_vault getVariable["safe_open",false])) exitWith {hint localize "STR_Cop_VaultLocked"};
-if([civilian,getPos player,100] call life_fnc_nearUnits) exitWith {hint "Please clear civilians out of the area before repairing the vault!"};
+//if([civilian,getPos player,100] call life_fnc_nearUnits) exitWith {hint "Please clear civilians out of the area before repairing the vault!"};
 
 life_action_inUse = true;
 
@@ -50,3 +50,5 @@ life_action_inUse = false;
 
 _vault setVariable["safe_open",false,true];
 hint localize "STR_Cop_VaultRepaired";
+deleteMarker "meth";
+life_armbox hideObjectGlobal true;

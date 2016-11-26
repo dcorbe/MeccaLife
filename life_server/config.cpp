@@ -12,6 +12,7 @@ class CfgPatches
 		fileName = "life_server.pbo";
 		author[]= {"Tonic"}; 
 	};
+	
 };
 
 /*Server Settings*/
@@ -155,12 +156,7 @@ class CfgFunctions
             class syncPrices {};
             class blowSafe {};
 		};
-		class Paintball
-		{
-			file = "\life_server\Functions\paintball";
-			class paintball {};
-			class game {};
-		};
+
         class Airdrop
 		{
 			file = "\life_server\Functions\airdrop";
@@ -190,15 +186,7 @@ class CfgFunctions
 			class updateGang {};
 			class capZones {};
 		};
-		class Gangwars
-		{
- 		file = "\life_server\Functions\Gangwars";
- 		class AS_GANG_war {};
- 		class AS_GANG_getValue {};
-  		class AS_GANG_takeTerr {};
- 		class AS_GANG_kill {};
-  		};
-
+		
 		class Actions
 		{
 			file = "\life_server\Functions\Actions";
@@ -221,6 +209,13 @@ class CfgFunctions
 			class SAH_reciever {};
 			class SAH_Transaction {};
 			class SAH_looper {};
+		};
+		class Taxi
+		{
+			file = "\life_server\Functions\Taxi";
+			class callTaxiDrivers {};
+			class acceptedTaxiCall {};
+			class goOnDuty {};
 		};
 		class VehicleUpgrades
 		{

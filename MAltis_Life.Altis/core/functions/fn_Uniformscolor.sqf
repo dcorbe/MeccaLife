@@ -19,6 +19,21 @@ if(playerSide == WEST) then {
     	(unitbackpack player) setObjectTextureGlobal [0, ""]; 
 	};
 	
+	
+	if(EQUAL(backpack player,"")) then {
+		life_maxWeight = life_maxWeightT;
+		_bp = backpack player;
+	} else {
+		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
+			_bp = backpack player;
+		life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
+		};
+	};
+	
+	
+	
+	
+	
 	if (uniform player == "U_Rangemaster") then {
 		player setObjectTextureGlobal [0, "textures\cadettroop.jpg"]; 
 	};

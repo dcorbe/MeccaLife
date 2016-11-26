@@ -26,8 +26,8 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Exit",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']]; 
 		//Seize Objects
 		life_actions = life_actions + [player addAction["Seize Objects",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];
-		life_actions = life_actions + [player addAction["Load Taser Rounds",{player setVariable ['nonLethals',true,true];},"",20,false,false,"",'(!(player getVariable ["nonLethals",false])']];
-		life_actions = life_actions + [player addAction["Load Lethal Rounds",{player setVariable ['nonLethals',false,true];},"",20,false,false,"",'((currentWeapon player != "hgun_P07_snds_F") && (currentWeapon player != "hgun_P07_F") && (player getVariable ["nonLethals",false]))']];
+		life_actions = life_actions + [player addAction["Load Taser Rounds",{player setVariable ['nonLethals',true,true];},"",0,false,false,"",'(!(player getVariable ["nonLethals",false])']];
+		life_actions = life_actions + [player addAction["Load Lethal Rounds",{player setVariable ['nonLethals',false,true];},"",0,false,false,"",'((currentWeapon player != "hgun_P07_snds_F") && (currentWeapon player != "hgun_P07_F") && (player getVariable ["nonLethals",false]))']];
 	};
 	
 	case independent:

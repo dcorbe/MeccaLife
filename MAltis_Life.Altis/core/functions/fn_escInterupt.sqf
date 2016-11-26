@@ -19,7 +19,7 @@ _escSync = {
 		private["_abortButton","_timeStamp"];
 		_abortButton = CONTROL(49,104);
 		_timeStamp = time + 10;
-		
+		 [] call SOCK_fnc_updateRequest;
 		waitUntil {
 			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
 			_abortButton ctrlCommit 0;

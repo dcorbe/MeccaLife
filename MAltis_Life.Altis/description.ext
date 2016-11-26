@@ -1,6 +1,6 @@
-author = "Tonic, MeccaDevTeam";
-onLoadName = "Mecca AltisLife v2.0";
-onLoadMission = "An RPG game mode developed by Tonic, edited by MeccaDevTeam";
+author = "Tonic, MeccaDevTeam,Many Various devs";
+onLoadName = "Mecca AltisLife v3.0";
+onLoadMission = "An RPG game mode developed by Tonic, edited by MeccaDevTeam and Many others";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -197,7 +197,7 @@ class CfgDebriefing
 	{
 		title = "Mission Failed";
 		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		description = "You are not allowed to use this slot because you do not have the appropriate permissions. Apply @ meccagaming.co";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

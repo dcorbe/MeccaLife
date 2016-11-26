@@ -54,10 +54,13 @@ while {true} do
 		};
 		
 	};
-	
-	if(player distance (getMarkerPos "jail_marker") > 180) exitWith
+	if(life_escape)exitWith
 	{
-		_esc = true;
+		_esc=true;
+	};
+	if(player distance (getMarkerPos "jail_marker") > 40) then
+	{
+		player setPosAsl [16734,13619,12.5];
 	};
 	
 	if(life_bail_paid) exitWith

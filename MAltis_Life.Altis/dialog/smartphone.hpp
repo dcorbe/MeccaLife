@@ -16,7 +16,7 @@ class Life_my_smartphone {
 		};
 		
 	class MainBackground:Life_RscText {
-			colorBackground[] = {0, 0, 0, 0.7};
+			colorBackground[] = {0, 0.8, 1, 0.7};
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
@@ -352,6 +352,18 @@ class Life_smartphone_notruf {
 			
 			x = 0.53;
 			y = 0.30;
+			w = 0.2;
+			h = (1 / 25);
+		};
+		class TxtTaxiButton : life_RscButtonMenu 
+		{
+			idc = 888996;
+			text = "$STR_CELL_TextTaxi";
+			colorBackground[] = {1, 1, 0.001,1.0};
+			onButtonClick = "closeDialog 0;[] call life_fnc_taxi_call;";
+			
+			x = 0.53;
+			y = 0.36 + (1 / 50);
 			w = 0.2;
 			h = (1 / 25);
 		};

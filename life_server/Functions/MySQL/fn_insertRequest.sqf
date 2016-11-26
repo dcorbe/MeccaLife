@@ -11,7 +11,7 @@ private["_uid","_name","_side","_money","_bank","_licenses","_handler","_thread"
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _name = [_this,1,"",[""]] call BIS_fnc_param;
 _money = [_this,2,0,[""]] call BIS_fnc_param;
-_bank = [_this,3,2500,[""]] call BIS_fnc_param;
+_bank = [_this,3,35000,[""]] call BIS_fnc_param;
 _returnToSender = [_this,4,ObjNull,[ObjNull]] call BIS_fnc_param;
 
 //Error checks

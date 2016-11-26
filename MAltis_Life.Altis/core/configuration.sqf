@@ -23,7 +23,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 1; //Scaled in minutes
+life_respawn_timer = 0.5; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -48,6 +48,9 @@ diag_log format ["configuration.sqf: last_known_position currently unknown"];
 life_drink = 0;
 life_my_gang = ObjNull;
 life_enslaved = false;
+life_calledTaxi = false;
+life_isOnDutyTaxi = false;
+life_inTaxi = false;
 
 
 life_noname_clothing = [
@@ -114,7 +117,8 @@ life_carryWeight = 0; //Represents the players current inventory weight (MUST ST
 */
 life_net_dropped = false;
 life_use_atm = true;
-life_is_arrested = false;
+life_is_arrested= false;
+life_escape=false;
 life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;

@@ -1,7 +1,5 @@
 
-
 _query = "getListZones";
-
 
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 life_capture_list = _queryResult select 0;

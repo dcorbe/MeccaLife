@@ -28,14 +28,12 @@ diag_log "Called respawned";
 //Load gear for a 'new life'
 switch(playerSide) do
 {
-	case west: {
-		If(BANK > 15000) then {BANK = BANK - 15000;};
+	case west: {		
 		_handle = [] spawn life_fnc_loadgear;
 		 
 	};
 	case civilian: {
 		_handle = [] spawn life_fnc_civLoadout;
-		 If(BANK > 1000000) then {BANK = BANK - 3000;};
 	};
 	case independent: {
 		diag_log "Calling medic loadout from respawned";
@@ -88,3 +86,4 @@ life_last_sync = time;
     waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 	life_is_alive = true;
 };
+player setCustomAimCoef .4;

@@ -4,25 +4,32 @@
 	Description:
 	Breaks the lock on a single door (Closet door to the player).
 */
-private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui","_owneruid","_owner","_fed"];
+private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui","_owneruid","_owner","_fed","_arm"];
 _building = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint "You are not looking at a house door."};
 if(typeOf _building == "Land_i_Shed_Ind_F") exitWith {hint "The metal door is reinforced, your boltcutter is not strong enough."};
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
-	_fed = true;
-} else {
+	_fed = true;}; 
+if((nearestObject [[25376.8,20345.8,0],"Land_Dome_Big_F"]) == _building OR (nearestObject [[25368.6,20344,0],"Land_Cargo_HQ_V2_F"]) == _building) then {
+	_arm = true;};
+if(!(_fed)&&!(_arm))then {
 	[[_building],"life_fnc_bankalarmsound",true,true] call life_fnc_MP;
 	[[0,"STR_ISTR_Bolt_AlertHouse",true,[profileName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-	_fed = false;
+	_fed=false;
+	_arm=false;
 };
 
 
 if(_fed && ({side _x == west} count playableUnits < 5)) exitWith {hint localize "STR_Civ_NotEnoughCops"};
+if(_arm && ({side _x == west} count playableUnits < 3)) exitWith {hint localize "STR_Civ_NotEnoughCops"};
 
 if(_fed) then {
 	[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+};
+if(_arm) then {
+	[[[1,2],"STR_ISTR_Bolt_AlertArm",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 };
 
 _doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _building) >> "NumberOfDoors");
@@ -52,6 +59,7 @@ _cP = 0.01;
 switch (typeOf _building) do {
 	case "Land_Dome_Big_F": {_cpRate = 0.003;};
 	case "Land_Research_house_V1_F": {_cpRate = 0.0015;};
+	case "Land_Cargo_HQ_V2_F": {_cpRate = 0.0010;};
 	default {
 		_cpRate = 0.0010;
 		diag_log format["Building: %1", _building];

@@ -310,6 +310,16 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		class ButtonTaxiMenu : Life_RscButtonMenu {
+			colorBackground[] = {0, 0, 0, 0};
+			idc = 2121;
+			text = "$STR_PM_TaxiMenu";
+			onButtonClick =  "[] spawn life_fnc_openTaxiMenu;";
+			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.801;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 		
 		class ButtonSyncData : life_RscButtonMenu {
 		    colorBackground[] = {0, 0, 0, 0};

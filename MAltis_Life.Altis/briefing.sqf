@@ -21,7 +21,7 @@ player createDiarySubject ["serverfeatures","Server Features"];
 		[
 			"Civ Rules", 
 				"
-				Civilian rules may located on our website here. http://meccagaming.ipbhost.com/topic/26-mecca-civilian-rules/<br/>
+				Civilian rules may located on our website here. http://meccagaming.co/forums/<br/>
 				"
 		]
 	];
@@ -30,7 +30,7 @@ player createDiarySubject ["serverfeatures","Server Features"];
 		[
 			"Cop Rules",
 				"
-					Cop rules may be located on our website here. http://meccagaming.ipbhost.com/topic/14-mecca-state-troopers-handbook/<br/>
+					Cop rules may be located on our website here. http://meccagaming.co/<br/>
 				"
 		]
 	];
@@ -40,7 +40,7 @@ player createDiarySubject ["serverfeatures","Server Features"];
 		[
 			"Medic Rules", 
 				"
-				Medic rules may be located on our website here. http://meccagaming.ipbhost.com/topic/17-mecca-emergency-services-handbook/<br/>
+				Medic rules may be located on our website here. http://meccagaming.co/<br/>
 				"
 		]
 	];
@@ -65,6 +65,7 @@ player createDiarySubject ["serverfeatures","Server Features"];
 				Q/E: Vehicle Signals<br/>
 				SHIFT+R: Knock players out<br/>
 				User11: Redgull<br/>
+				User12: Ear Plugs Hotkey<br/>
 				"
 		]
 	];
@@ -84,6 +85,7 @@ player createDiarySubject ["serverfeatures","Server Features"];
 				F: Cop Siren toggle<br/>
 				Shift + F: Cop Yelp<br/>
 				User11: Redgull<br/>
+				User12: Ear Plugs Hotkey<br/>
 				"
 		]
 	];
@@ -110,14 +112,6 @@ player createDiarySubject ["serverfeatures","Server Features"];
 		]
 	];
 	
-	player createDiaryRecord ["serverfeatures",
-		[
-			"Paintball",
-				"
-				Paintball can be played at a number of the major cities on Altis. Simply proceed to the paintball vendor and select to join the match. 
-				"
-		]
-	];
 	
 	player createDiaryRecord ["serverfeatures",
 		[

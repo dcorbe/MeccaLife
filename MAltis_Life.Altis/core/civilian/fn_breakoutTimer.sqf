@@ -16,7 +16,7 @@ while {true} do {
 	};
 	if(round(_time - time) < 1) exitWith {};
 	if(!((_this select 0) getVariable["inbreakout",false])) exitWith {}; //End the timer, something has happened.
-	_timer ctrlSetText format["%1",[(_time - time),"MM:SS"] call BIS_fnc_secondsToString];
+	_timer ctrlSetText format["jail:%1",[(_time - time),"MM:SS"] call BIS_fnc_secondsToString];
 	sleep 0.08;
 };
 0 cutText["","PLAIN"];

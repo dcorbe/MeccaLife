@@ -13,10 +13,10 @@ _price = floor(_tochangePriceNumber);
 
 if (_price < 1) exitWith {hint "Invalid value"};
 
-if (isNil {profileNamespace getVariable "listings"}) then {profileNamespace setVariable ["listings",[]];};
-_currentListings = profileNamespace getVariable "listings";
+if (isNil {profileNamespace getVariable "playersales"}) then {profileNamespace setVariable ["playersales",[]];};
+_currentListings = profileNamespace getVariable "playersales";
 _currentListings pushBack [getPlayerUID player,_classname,_price];
-profileNamespace setVariable ["listings",_currentListings];
+profileNamespace setVariable ["playersales",_currentListings];
 
 systemChat format ["%1",[getPlayerUID player,_classname,_price]];
 

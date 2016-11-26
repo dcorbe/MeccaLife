@@ -30,7 +30,7 @@ switch (_mode) do
 			<t color='#228B22'>%3%2</t><br/>", name _seller,_price,"$"
 		];
 		life_atmbank = life_atmbank + _price;
-		_listings = profileNamespace getVariable "listings";
+		_listings = profileNamespace getVariable "playersales";
 		//_listings = _listings - (_info select 2);
 		_index = -1;
 		_handled = false;
@@ -38,7 +38,7 @@ switch (_mode) do
 			_index = _index + 1;
 			if (_x isEqualTo (_info select 2) AND !_handled) then {_listings deleteAt _index;_handled=true;};
 		} forEach _listings;
-		profileNamespace setVariable ["listings",_listings];
+		profileNamespace setVariable ["playersales",_listings];
 	};
 	case 2:
 	{

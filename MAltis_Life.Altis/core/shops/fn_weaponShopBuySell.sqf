@@ -51,7 +51,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			_funds = life_gangbank;
 			_funds = _funds - _price;
 			[_item,true] spawn life_fnc_handleItem;
-			[[life_gangid,-1,life_gangbank,[]],"life_fnc_updateGangInfo",true,false] spawn life_fnc_MP;
+			[[life_gangid,-1,_funds,[]],"life_fnc_updateGangInfo",true,false] spawn life_fnc_MP;
 		} else {
 			if(_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 			hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
@@ -59,12 +59,28 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			[_item,true] spawn life_fnc_handleItem;
 		};
 	} else {
-		if(_price > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-		
-		//player say3D "buy";
-		
+		_oldPrice = _price;
+		_tax = false;
+		_toSelect = ((life_capture_list) select 0);	
+		_price = round (_price * 1.04);
+		_tax = true;
+		if(_price > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 		CASH = CASH - _price;
+		if(_tax) then {
+			_taxed = round (_price - _oldPrice);
+			if(_taxed < 1) exitWith {};
+			systemChat format["A tax of %1 was taken by the owners of %2",_taxed,(_toSelect select 0)];
+			life_tax = life_tax + _taxed;
+			if(life_tax == _taxed) then {
+				[_toSelect select 0] spawn {
+					waitUntil{!dialog};
+					
+					[[5,nil,(_this select 0),life_tax],"TON_fnc_updateGang",(false),false] spawn life_fnc_MP;
+					life_tax = 0;
+				};
+			};
+		};
 		[_item,true] spawn life_fnc_handleItem;
 	};
 };

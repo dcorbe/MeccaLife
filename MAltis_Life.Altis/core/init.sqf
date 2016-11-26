@@ -13,6 +13,7 @@ diag_log "--------------------------------- Starting Altis Life Client Init ----
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
 enableSentences false;
+enableRadio false;
 [] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
 
 //Setup initial client core functions
@@ -98,6 +99,7 @@ LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] cal
 LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
 [] spawn life_fnc_speaking;
 
+
 player SVAR ["steam64ID",getPlayerUID player];
 player SVAR ["realname",profileName,true];
 
@@ -168,15 +170,7 @@ if (playerSide == civilian) then {
 
 life_invisible = false;
 life_deadGear = [];
-[] execVM "Gangwars\init.sqf";
-life_fnc_capNotice = compileFinal
-"
-_zone = _this select 0;
-_win = [_this,1,false,[false]] call BIS_fnc_param;
-_enemy = [_this,2,"""",[""""]] call BIS_fnc_param;
-if(_win) then {
-	hint parseText format [""<t align='center'><t color='#FF0000'><t size='2'>Congratulations!</t></t><br/><br/><t color='#ffffff'>You have captured the <t color='#00ff00'>%1</t>!"",_zone];
-} else {
-	hint parseText format [""<t align='center'><t color='#FF0000'><t size='2'>Attention</t></t><br/><br/><t color='#ffffff'>Your territory zone, <t color='#00ff00'>%1</t>, is being captured by the gang known as %2!"",_zone,_enemy];
-};
-";
+life_tax=0;
+0 enableChannel [false, false];
+1 enableChannel [false, false];
+2 enableChannel [false, false];

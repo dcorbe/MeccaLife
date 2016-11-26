@@ -1,8 +1,7 @@
 private["_heli","_wreck"];
 
 //Create gold vehicle wreck 
-_heli = "Land_Cargo20_grey_F" createVehicle (["hmrkGreen",2,["hmrkRed","hmrkRed_1","hmrkRed_2","hmrkRed_3","hmrkRed_4","hmrkRed_6","hmrkRed_7","hmrkRed_8",
-															"hmrkRed_9","hmrkRed_10","hmrkRed_11","hmrkRed_12","hmrkRed_13","hmrkRed_14","hmrkRed_15"]] call SHK_pos);
+_heli = "Land_Cargo20_grey_F" createVehicle (["hmrkGreen",2,["hmrkRed","hmrkRed_1","hmrkRed_2","hmrkRed_3"]] call SHK_pos);
 
 _heli setPosASLW [(position _heli) select 0, (position _heli) select 1, -5.5];
 _heli enableSimulation false;
