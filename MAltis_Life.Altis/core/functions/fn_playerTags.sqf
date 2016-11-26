@@ -56,7 +56,7 @@ SUB(_units,[player]);
 					_x GVAR ["realname",name _x],
 					
 					switch ((_x GVAR "rank")) do {
-						case 1: {"Recriuit"};
+						case 1: {"Recruit"};
 						case 2: {"Private"};
 						case 3: {"Corporal"};
 						case 4: {"Sergeant"};
