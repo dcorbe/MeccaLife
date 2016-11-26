@@ -182,7 +182,7 @@ class CarShops {
 		vehicles[] = {
 			{ "I_Heli_light_03_unarmed_F", pghosthawkcop, "", { "life_coplevel", 6 } },
 			{ "O_Heli_Light_02_unarmed_F", pghosthawkcop, "", { "life_coplevel", 3 } },
-			{ "B_Heli_Light_01_F", pmh9cop, "", { "life_coplevel", 2 } },
+			{ "B_Heli_Light_01_F", pmh9cop, "", { "life_coplevel", 3 } },
 			{ "B_Heli_Transport_01_F", pghosthawkcop, "", { "life_coplevel", 5 } }
 		};
 	};
