@@ -9,6 +9,7 @@
 #define phatchback 22500
 #define pquadbike 2500
 #define poffroad 35000
+#define pjeep 35000
 #define psuv 30000
 #define phatchbacksport 45000
 #define pkart 15000
@@ -28,7 +29,8 @@
 #define ptempestdev 1700000
 #define ftruck 300000
 
-
+#define pqilin 300000
+#define pprowler 100000
 #define pifrit 700000
 #define p50cal 950000
 
@@ -40,6 +42,7 @@
 #define pmarid 750000
 
 #define pmh9civ 352500
+#define pplane 500000
 #define pm900 250000
 #define porcaciv 675000
 #define ptarutrans 1350000
@@ -70,6 +73,7 @@ class CarShops {
 			{ "B_Quadbike_01_F", pquadbike, "" }, 
 			{ "C_Hatchback_01_F", phatchback, "driver" }, 
 			{ "C_Offroad_01_F", poffroad, "driver" },
+			{ "C_Offroad_02_unarmed_red_F", pjeep, "driver" },
 			{ "C_SUV_01_F", psuv, "driver" },
 			{ "C_Hatchback_01_sport_F", phatchbacksport, "driver" }
 		};
@@ -123,6 +127,7 @@ class CarShops {
 			{ "B_Quadbike_01_F", pquadbike, "" },
 			{ "B_G_Offroad_01_F", poffroad, "" },
 			{ "O_MRAP_02_F", pifrit, "rebel" },
+			{ "O_T_LSV_02_unarmed_ghex_F", pqilin, "rebel" },
 			{ "B_G_Offroad_01_armed_F", p50cal, "rebel" },
 			{ "B_Heli_Light_01_F", pmh9civ, "rebel" },
 			{ "O_Heli_Light_02_unarmed_F", porcaciv, "rebel" },
@@ -138,6 +143,7 @@ class CarShops {
 			{ "C_Offroad_01_F", poffroadcop, "", { "life_coplevel", 2 } },
 			{ "C_SUV_01_F", psuvcop, "", { "life_coplevel", 2 } },
 			{ "B_MRAP_01_F", phuntercop, "", { "life_coplevel", 4 } },
+			{ "B_MRAP_01_F", pprowler, "", { "life_coplevel", 3 } },
 			{ "O_APC_Wheeled_02_rcws_F", pmarid, "", { "life_swatlevel", 1 } },
 			{ "C_Hatchback_01_sport_F", phatchbacksport, "", { "life_coplevel", 2 } }
 		};
@@ -163,7 +169,8 @@ class CarShops {
 	class civ_jet {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Plane_CAS_01_F", ptarutrans, "pilot",{ "life_donator", 3 } }
+			{ "B_Plane_CAS_01_F", ptarutrans, "pilot" },
+			{ "C_Plane_Civil_01_racing_F", pplane, "pilot" }
 		};
 	};
 
@@ -241,10 +248,17 @@ class CfgVehicles {
             } }
 	    };
 	};
+	
 	class B_Plane_CAS_01_F : Default {
 	    vItemSpace = 150;
 	    price = ptarutrans;
 	};
+	
+	class C_Plane_Civil_01_racing_F : Default {
+	    vItemSpace = 150;
+	    price = pplane;
+	};
+	
 	class O_APC_Wheeled_02_rcws_F : Default {
 	    vItemSpace = 150;
 	    price = pmarid;
@@ -495,6 +509,26 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
+	
+	class O_T_LSV_02_unarmed_ghex_F {
+        vItemSpace = 150;
+        price = pqilin;
+        storageFee[] = { 450, 0, 0, 0 };
+		garageSell[] = { 65000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class B_LSV_01_unarmed_black_F {
+        vItemSpace = 150;
+        price = pprowler;
+        storageFee[] = { 450, 0, 0, 0 };
+		garageSell[] = { 65000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
 
 	class I_MRAP_03_F {
         vItemSpace = 58;
@@ -553,6 +587,16 @@ class CfgVehicles {
 	class C_Kart_01_Blu_F {
 		vItemSpace = 20;
 		price = pkart;
+		storageFee[] = { 1500, 0, 0, 0 };
+		garageSell[] = { 3500, 0, 0, 0 };
+		inusrance = 1650;
+		chopShop = 3500;
+		textures[] = {};
+	};
+	
+	class C_Offroad_02_unarmed_red_F {
+		vItemSpace = 145;
+		price = pjeep;
 		storageFee[] = { 1500, 0, 0, 0 };
 		garageSell[] = { 3500, 0, 0, 0 };
 		inusrance = 1650;
