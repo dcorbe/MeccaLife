@@ -19,7 +19,8 @@ if(playerSide == WEST) then {
     	(unitbackpack player) setObjectTextureGlobal [0, ""]; 
 	};
 	
-	
+	private["_bp"];
+	_bp = "";
 	if(EQUAL(backpack player,"")) then {
 		life_maxWeight = life_maxWeightT;
 		_bp = backpack player;
