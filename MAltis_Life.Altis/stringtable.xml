@@ -2208,6 +2208,12 @@
 		<Key ID="STR_pInAct_Breathalyzer">
 			<Orignal>Breathalyze Player</Orignal>
 		</Key>
+		<Key ID="STR_pInAct_blindfold">
+			<Orignal>Blindfold Player</Orignal>
+		</Key>
+		<Key ID="STR_pInAct_unblindfold">
+			<Orignal>Unblindfold Player</Orignal>
+		</Key>
 		<Key ID="STR_pInAct_RevokeLicense">
 			<Orignal>Revoke Licenses</Orignal>
 		</Key>

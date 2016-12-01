@@ -104,10 +104,19 @@ _Btn8 buttonSetAction "if(player distance life_pInact_curTarget > 4) exitWith {h
 _Btn9 ctrlSetText localize "STR_pInAct_SeizeWeapon";
 _Btn9 buttonSetAction "if(player distance life_pInact_curTarget > 4) exitWith {hint 'You are too far away.'};[life_pInact_curTarget] call life_fnc_seizePlayerWeapon;";
 
+/*
 //actually the Breathalyser button
 _Btn10 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn10 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTarget,FALSE] spawn life_fnc_MP;closeDialog 0";
+*/
 
+if ((life_pInact_curTarget getVariable "blindfolded") == true) then {
+	_Btn10 ctrlSetText localize "STR_pInAct_unblindfold";
+	_Btn10 buttonSetAction "if(player distance life_pInact_curTarget > 4) exitWith {hint 'You are too far away.'};[life_pInact_curTarget] call life_fnc_copUnblindfold;"
+} else {
+	_Btn10 ctrlSetText localize "STR_pInAct_blindfold";
+	_Btn10 buttonSetAction "if(player distance life_pInact_curTarget > 4) exitWith {hint 'You are too far away.'};[life_pInact_curTarget] call life_fnc_copBlindfold;"
+};
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30) OR (player distance (getMarkerPos "cop_spawn_4") < 30) OR (player distance (getMarkerPos "cop_spawn_6") < 30) OR  (player distance (getMarkerPos "jail_escape") < 30))) then  {
 	_Btn7 ctrlEnable false;

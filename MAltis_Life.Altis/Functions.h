@@ -383,6 +383,8 @@ class Life_Client_Core
 		class arrestDialog_Arrest {};
 		class breathalyzer {};
 		class copHorn {};
+		class copBlindfold {};
+		class copUnblindfold {};
 		
 	};
 	
