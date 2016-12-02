@@ -11,3 +11,4 @@ _unit setVariable["transporting",FALSE,TRUE];
 detach _unit;
 
 [[0,"STR_NOTF_Unrestrain",true,[_unit getVariable["realname",name _unit], profileName]],"life_fnc_broadcast",west,FALSE] call life_fnc_MP;
+[[player], "life_fnc_copUnblindfold", _unit, false] call life_fnc_MP;
