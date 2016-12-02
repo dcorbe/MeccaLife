@@ -349,7 +349,7 @@ class WeaponShops {
             { "srifle_DMR_02_F", "Swat MAR-10", 500, { "life_swatlevel", "SCALAR", 1 } },
 			{ "srifle_DMR_03_F", "Swat MK1", 500, { "life_swatlevel", "SCALAR", 1 } },
 			{ "srifle_EBR_F", "Swat MK18", 500, { "life_swatlevel", "SCALAR", 1 } },
-			{ "arifle_AK12_F", "Swat AK12", 500, { "life_swatlevel", "SCALAR", 1 } },
+			{ "arifle_AK12_GL_F", "Swat AK12", 500, { "life_swatlevel", "SCALAR", 1 } },
 			{ "arifle_SPAR_03_blk_F", "Eric's Dildo", 500, { "life_swatlevel", "SCALAR", 1 } },
 			{ "srifle_DMR_01_F", "Swat Rahim", 500, { "life_swatlevel", "SCALAR", 1 } },
             { "muzzle_snds_H", "Swat Suppressor", 500, { "life_swatlevel", "SCALAR", 1 } },

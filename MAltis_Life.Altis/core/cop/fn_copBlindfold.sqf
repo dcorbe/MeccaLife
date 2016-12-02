@@ -8,4 +8,4 @@
 [player] joinSilent (createGroup civilian);
 cutText ["You have been blindfolded","BLACK",1,true];
 player setVariable ["BIS_noCoreConversations", true];
-player setVariable ["blindfolded", true];
+player setVariable ["blindfolded",true,true];
