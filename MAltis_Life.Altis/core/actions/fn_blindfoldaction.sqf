@@ -5,7 +5,7 @@
 	Blindfolds the target
 */
 private["_unit"];
-_unit = cursorTarget;
+_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {}; //Not valid
 if((player distance _unit > 3)) exitWith {};
 if(player == _unit) exitWith {};

@@ -141,7 +141,8 @@ class Life_Client_Core
 		class douevenlift {};
 		class douevenliftjail {};
 		class collectcartel {};
-		
+		class blindfoldaction {};
+		class unblindfoldaction {};
 	};
 	
 	class Paintball
