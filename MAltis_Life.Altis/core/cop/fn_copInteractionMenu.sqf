@@ -110,7 +110,7 @@ _Btn10 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn10 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTarget,FALSE] spawn life_fnc_MP;closeDialog 0";
 */
 
-if ((life_pInact_curTarget getVariable ["blindfolded", false]) == true) then {
+if (life_pInact_curTarget getVariable ["blindfolded", false]) then {
 	_Btn10 ctrlSetText localize "STR_pInAct_unblindfold";
 	_Btn10 buttonSetAction "if(player distance life_pInact_curTarget > 4) exitWith {hint 'You are too far away.'};[life_pInact_curTarget] call life_fnc_unblindfoldaction;"
 } else {

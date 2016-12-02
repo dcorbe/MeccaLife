@@ -10,4 +10,4 @@ if(isNull _unit) exitWith {}; //Not valid
 if((player distance _unit > 3)) exitWith {};
 if(player == _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
-[[player], "life_fnc_copBlindfold", cursortarget, false] call life_fnc_MP;
+[[player], "life_fnc_copBlindfold", _unit, false] call life_fnc_MP;

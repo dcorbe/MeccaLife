@@ -2,8 +2,8 @@
 	Author: Murali
 	
 	Description:
-	Blindfolds the target
+	Unblindfolds the target
 */
 private["_unit"];
 _unit = cursorTarget;
-[[player], "life_fnc_copUnblindfold", cursortarget, false] call life_fnc_MP;
+[[player], "life_fnc_copUnblindfold", _unit, false] call life_fnc_MP;
