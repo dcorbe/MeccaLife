@@ -36,3 +36,4 @@ player setVariable["medrank",(FETCH_CONST(life_medicLevel)),true];
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 	
 [] call life_fnc_Uniformscolor;
+life_gangid = 9999999;
