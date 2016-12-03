@@ -206,10 +206,10 @@ _rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
 _dome allowDamage false;
 /* Setup the federal Armory building(s) */
-private["_dome","_rsb"];
+private["_dome","_rsbarm"];
 _armdome = nearestObject [[getPosATL fed_arm select 0, getPosATL fed_arm select 1, 0],"Land_Dome_Small_F"];
-_rsbarm = nearestObject [[getPosATL fed_arm select 0, getPosATL fed_arm select 1, 0],"Land_Cargo_HQ_V1_F"];
-for "_i" from 1 to 3 do {_armdome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _armdome animate [format["Door_%1_rot",_i],0];};
+_rsbarm = nearestObject [[getPosATL fed_arm select 0, getPosATL fed_arm select 1, 0],"Land_Cargo_HQ_V2_F"];
+for "_i" from 1 to 6 do {_armdome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _armdome animate [format["Door_%1_rot",_i],0];};
 _rsbarm setVariable["bis_disabled_Door_1",1,true];
 _rsbarm setVariable["bis_disabled_Door_2",1,true];
 _rsbarm allowDamage false;

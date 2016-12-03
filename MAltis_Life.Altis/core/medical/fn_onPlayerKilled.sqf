@@ -122,4 +122,6 @@ if(!isNull _killer && {_killer != _unit} && {side _killer == west} && {side _kil
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
 //GangWarStuff
-
+cutText ["You have been unblindfolded","BLACK IN",1,true];
+player setVariable ["BIS_noCoreConversations", false];
+player setVariable ["blindfolded", false, true];
