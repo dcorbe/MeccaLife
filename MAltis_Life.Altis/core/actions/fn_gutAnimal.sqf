@@ -11,7 +11,7 @@ if(isNull _animalCorpse) exitWith {}; //Object passed is null?
 
 life_interrupted = false;
 if(!((typeOf _animalCorpse) in ["Hen_random_F","Cock_random_F","Goat_random_F","Sheep_random_F","Rabbit_F"])) exitWith {};
-if(player distance _animalCorpse > 3.5) exitWith {};
+if(player distance _animalCorpse > 10) exitWith {};
 life_action_inUse = true;
  switch(typeOf _animalCorpse) do {
 	case "Hen_random_F": {_displayName = "Chicken"; _item = "hen_raw";};
