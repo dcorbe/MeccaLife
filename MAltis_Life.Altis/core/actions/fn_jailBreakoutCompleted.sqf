@@ -19,3 +19,5 @@ if(_action) then {
 	hint "You decided to serve your time.";
 	life_escape = false;
 };
+sleep 5
+life_escape = false;
