@@ -376,6 +376,7 @@ switch (_code) do {
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog && !life_is_processing) then {
 			[] call life_fnc_p_openMenu;
+			[] call life_fnc_statusBar;
 		};
 	};
 	
