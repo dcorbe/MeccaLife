@@ -50,6 +50,6 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 life_action_inUse = false;
 
-_object setPos (getMarkerPos "jail_breakout");
+[[_object],"life_fnc_jailBreakoutCompleted",true,false] spawn life_fnc_MP;
 
 [[4, format["%1 has successfully hacked into the Mecca Central Criminal Database!", name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
