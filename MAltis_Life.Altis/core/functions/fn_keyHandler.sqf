@@ -349,16 +349,14 @@ switch (_code) do {
 	//L Key?
 	case 38: {
 		//If cop run checks for turning lights on.
-		if(_shift && playerSide in [west,independent]) then {
+		if(_shift) then {
 			if(vehicle player != player) then {
-				if(playerSide != civilian) then {	
-					if(playerSide == west) then {
-						[vehicle player] call life_fnc_sirenLights;
-					} else {
-						[vehicle player] call life_fnc_medicSirenLights;
-					};
-					_handled = true;
+				if(playerSide in [west,civilian]) then {
+					[vehicle player] call life_fnc_sirenLights;
+				} else {
+					[vehicle player] call life_fnc_medicSirenLights;
 				};
+				_handled = true;
 			};
 		};
 	};

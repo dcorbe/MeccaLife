@@ -14,9 +14,15 @@ if(!(typeOf _vehicle in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchbac
 
 _trueorfalse = _vehicle GVAR ["lights",FALSE];
 
-if(_trueorfalse) then {
+if (playerSide == west) then {
+	if(_trueorfalse) then {
+		_vehicle SVAR ["lights",FALSE,TRUE];
+	} else {
+		_vehicle SVAR ["lights",TRUE,TRUE];
+		[[_vehicle,0.22],"life_fnc_copLights",true,false] call life_fnc_MP;
+	};
+};
+
+if (playerSide == civilian) then {
 	_vehicle SVAR ["lights",FALSE,TRUE];
-} else {
-	_vehicle SVAR ["lights",TRUE,TRUE];
-	[[_vehicle,0.22],"life_fnc_copLights",true,false] call life_fnc_MP;
 };
