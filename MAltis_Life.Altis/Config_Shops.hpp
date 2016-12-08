@@ -273,12 +273,7 @@ class WeaponShops {
 			{ "V_RebreatherB", "", 5000, { "", "", -1 } },
 			{ "V_RebreatherIA", "", 5000, { "", "", -1 } },
 			{ "V_RebreatherIR", "", 5000, { "", "", -1 } },
-			{ "V_HarnessOGL_gry", "SuicideVest", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_mtp", "Special Carrier", 550000, { "", "", -1 } },
-			{ "V_PlateCarrierSpec_rgr", "Special Carrier", 550000, { "", "", -1 } },
-			{ "V_PlateCarrierGL_rgr", "Carrier GL Green", 500000, { "", "", -1 } },
-			{ "V_PlateCarrierIAGL_dgtl", "Carrier Rig Digi", 550000, { "life_donator", "SCALAR", 2 } }, 
-			{ "V_PlateCarrierIAGL_oli", "Carrier GL Rig olive", 350000, { "life_donator", "SCALAR", 2 } }
+			{ "V_HarnessOGL_gry", "SuicideVest", 500000, { "", "", -1 } }
         };
     };
 	

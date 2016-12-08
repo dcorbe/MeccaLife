@@ -274,6 +274,21 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["RPG32_F", 1];};
 sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierSpec_mtp", 1];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierSpec_rgr", 1];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierGL_rgr", 1];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierIAGL_dgtl", 1];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierIAGL_oli", 1];};
+sleep 0.1;
 
 switch (_safe) do {
     case "fed" : 
