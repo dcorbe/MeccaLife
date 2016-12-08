@@ -383,7 +383,7 @@ switch (_safe) do {
                 };
             };
         };
-        sleep(_delay*30+1);
+        sleep(_delay*60+1);
         if(!(fed_pharm getVariable["chargeplaced",false])) exitWith {};
 		_meth = createMarker ["meth", [getPosATL fed_pharm select 0, getPosATL fed_pharm select 1, getPosATL fed_pharm select 2]];  
 		"meth" setMarkerShape "ICON";  
