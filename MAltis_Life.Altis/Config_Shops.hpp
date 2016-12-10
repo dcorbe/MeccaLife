@@ -336,6 +336,7 @@ class WeaponShops {
             { "5Rnd_127x108_APDS_Mag", "Swat 12.7 5rnd Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
             { "10Rnd_338_Mag", "Swat .338 10rnd Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
             { "20Rnd_762x51_Mag", "Swat 7.62 20rnd Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
+			{ "20Rnd_762x51_Mag", "Swat 7.62 20rnd Magazine", 500, { "life_coplevel", "SCALAR", 4 } },
             { "10Rnd_762x54_Mag", "Swat 7.62 10rnd Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
 			{ "30Rnd_762x39_Mag_F", "Swat AK12 Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
             { "100Rnd_65x39_caseless_mag", "Swat 6.5 100rnd Magazine", 500, { "life_swatlevel", "SCALAR", 1 } },
