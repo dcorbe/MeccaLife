@@ -150,8 +150,8 @@ class Clothing {
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_TacVest_blk_POLICE", "Police Vest", 5000, { "", "", -1 } },
-			{ "V_PlateCarrier1_blk", "Officer Vest", 25000, { "life_coplevel", "SCALAR", 4 } },
-			{ "V_PlateCarrierSpec_blk", "Leader Vest", 45000, { "life_coplevel", "SCALAR", 7 } },
+			{ "V_PlateCarrier1_blk", "Officer Vest", 25000, { "life_coplevel", "SCALAR", 3 } },
+			{ "V_PlateCarrierSpec_blk", "Leader Vest", 45000, { "life_coplevel", "SCALAR", 5 } },
 			{ "V_PlateCarrierGL_blk", "Swat Vest", 500, { "life_swatlevel", "SCALAR", 1} },
 			{ "V_RebreatherB", "", 5000, { "", "", -1 } }
 		};

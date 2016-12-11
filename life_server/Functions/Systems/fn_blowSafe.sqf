@@ -70,14 +70,24 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_GM6_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["5Rnd_127x108_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["5Rnd_127x108_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_Mk20C_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["30Rnd_556x45_Stanag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_GM6_camo_F", 1];};
@@ -88,8 +98,13 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_LRR_camo_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["7Rnd_408_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["7Rnd_408_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 2);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_02_F", 1];};
@@ -97,38 +112,68 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_02_camo_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_338_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_338_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_04_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_127x54_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_127x54_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_05_blk_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_93x64_DMR_05_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_93x64_DMR_05_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["MMG_01_hex_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_93x64_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_93x64_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["MMG_02_black_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["130Rnd_338_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["130Rnd_338_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["LMG_Zafir_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_762x54_Box", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_762x54_Box", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 5);
 if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_H", 1];};
@@ -187,8 +232,13 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_SPAR_02_khk_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
 if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_556x45_Drum_Mag_F", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_556x45_Drum_Mag_F", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_SPAR_03_khk_F", 1];};
