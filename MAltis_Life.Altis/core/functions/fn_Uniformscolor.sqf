@@ -6,6 +6,18 @@
 */
 #define FETCH_CONST(var) (call var)
 
+private["_bp"];
+	_bp = "";
+	if(EQUAL(backpack player,"")) then {
+		life_maxWeight = life_maxWeightT;
+		_bp = backpack player;
+	} else {
+		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
+			_bp = backpack player;
+		life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
+		};
+	};
+
 if(playerSide == independent) then {
 	if ((uniform player) == "U_I_CombatUniform_tshirt") then {
 		player setObjectTextureGlobal [0, "textures\medic_uniform.jpg"];
@@ -19,17 +31,7 @@ if(playerSide == WEST) then {
     	(unitbackpack player) setObjectTextureGlobal [0, ""]; 
 	};
 	
-	private["_bp"];
-	_bp = "";
-	if(EQUAL(backpack player,"")) then {
-		life_maxWeight = life_maxWeightT;
-		_bp = backpack player;
-	} else {
-		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
-			_bp = backpack player;
-		life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
-		};
-	};
+
 	
 	
 	
