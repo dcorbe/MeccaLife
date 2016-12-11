@@ -134,12 +134,12 @@ clearItemCargoGlobal _box;
 
 sleep 0.1;
 _var=floor(random 6);
-if (_var==0) then {_box addWeaponCargoGlobal ["LMG_Zafir_F", 5]; _box addWeaponCargoGlobal ["150Rnd_762x51_Box_Tracer", 15]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-if (_var==1) then {_box addWeaponCargoGlobal ["launch_Titan_F", 5]; _box addWeaponCargoGlobal ["Titan_AA", 15]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-if (_var==2) then {_box addWeaponCargoGlobal ["launch_RPG32_F", 5]; _box addWeaponCargoGlobal ["RPG32_F", 15]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-if (_var==3) then {_box addWeaponCargoGlobal ["arifle_Katiba_GL_F", 5]; _box addWeaponCargoGlobal ["1Rnd_HE_Grenade_shell", 15]; _box addWeaponCargoGlobal ["UGL_FlareWhite_F", 15]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-if (_var==4) then {_box addWeaponCargoGlobal ["srifle_GM6_F", 5]; _box addWeaponCargoGlobal ["optic_SOS", 5]; _box addWeaponCargoGlobal ["5Rnd_127x108_APDS_Mag", 20]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-if (_var==5) then {_box addWeaponCargoGlobal ["SatchelCharge_Remote_Mag", 10]; _box addWeaponCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 20]; _box addWeaponCargoGlobal ["muzzle_snds_H", 1]; _box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==0) then {_box addWeaponCargoGlobal ["LMG_Zafir_F", 5]; _box addWeaponCargoGlobal ["150Rnd_762x51_Box_Tracer", 15]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==1) then {_box addWeaponCargoGlobal ["launch_Titan_F", 5]; _box addWeaponCargoGlobal ["Titan_AA", 15]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==2) then {_box addWeaponCargoGlobal ["launch_RPG32_F", 5]; _box addMagazineCargoGlobal ["RPG32_F", 15]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==3) then {_box addWeaponCargoGlobal ["arifle_Katiba_GL_F", 5]; _box addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 5]; _box addWeaponCargoGlobal ["UGL_FlareWhite_F", 15]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==4) then {_box addWeaponCargoGlobal ["srifle_GM6_F", 5]; _box addWeaponCargoGlobal ["optic_SOS", 5]; _box addMagazineCargoGlobal ["5Rnd_127x108_APDS_Mag", 20]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+if (_var==5) then {_box addWeaponCargoGlobal ["SatchelCharge_Remote_Mag", 10]; _box addWeaponCargoGlobal ["ClaymoreDirectionalMine_Remote_Mag", 20]; _box addItemCargoGlobal ["muzzle_snds_H", 1]; _box addItemCargoGlobal ["muzzle_snds_acp", 1];};
 sleep 0.1;
 // Fill box end
 
