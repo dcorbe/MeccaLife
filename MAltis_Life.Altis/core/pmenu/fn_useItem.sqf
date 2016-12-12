@@ -93,7 +93,7 @@ switch (true) do {
 	};
 	case (EQUAL(_item,"adrenaline")): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
-		if(player distance cursortarget > 5) exitWith {}; //Not close enough.
+		if(player distance cursortarget > 2) exitWith {}; //Not close enough.
 		[cursorTarget] spawn life_fnc_adrenaline;
 		closeDialog 0;
 		};
