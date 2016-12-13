@@ -1,6 +1,6 @@
 #include "\life_server\script_macros.hpp"
 /*
-    Author: Derek
+    Author: Derek,UnNamed,Murali
     
     File: fn_blowSafe.sqf
 
@@ -20,34 +20,74 @@ _var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["hgun_ACPC2_F", 1];};
 sleep 0.1;
 _var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["9Rnd_45ACP_Mag", 1];};
+sleep 0.1;
+_var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["hgun_Pistol_heavy_02_F", 2];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["6Rnd_45ACP_Cylinder", 2];};
 sleep 0.1;
 _var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_Katiba_F", 2];};
 sleep 0.1;
 _var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 2];};
+sleep 0.1;
+_var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_SDAR_F", 2];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 2];};
+sleep 0.1;
+_var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["20Rnd_556x45_UW_mag", 2];};
 sleep 0.1;
 _var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["hgun_PDW2000_F", 2];};
 sleep 0.1;
 _var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["30Rnd_9x21_Mag", 2];};
+sleep 0.1;
+_var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["SMG_01_F", 2];};
 sleep 0.1;
-_var=floor(random 10);
-if (_var==1) then {_box addWeaponCargoGlobal ["arifle_sdar_F", 2];};
+_var=floor(random 3);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_45ACP_Mag_SMG_01", 2];};
+sleep 0.1;
+_var=floor(random 100);
+if (_var==1) then {_box addMagazineCargoGlobal ["Titan_AA", 1];};
 sleep 0.1;
 _var=floor(random 10);
-if (_var==1) then {_box addWeaponCargoGlobal ["Titan_AA", 1];};
+if (_var==1) then {_box addWeaponCargoGlobal ["launch_Titan_F", 1];};
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["launch_RPG32_F", 1];};
 sleep 0.1;
+_var=floor(random 100);
+if (_var==1) then {_box addMagazineCargoGlobal ["RPG32_F", 1];};
+sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_GM6_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["5Rnd_127x108_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["5Rnd_127x108_Mag", 1];};
+>>>>>>> origin/master
+sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["arifle_Mk20C_F", 1];};
+sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["30Rnd_556x45_Stanag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_GM6_camo_F", 1];};
@@ -58,85 +98,126 @@ sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_LRR_camo_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["7Rnd_408_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["7Rnd_408_Mag", 1];};
+>>>>>>> origin/master
+sleep 0.1;
 _var=floor(random 2);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_02_F", 1];};
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_02_camo_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_338_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_338_Mag", 1];};
+>>>>>>> origin/master
+sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_04_F", 1];};
 sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["20Rnd_762x51_Mag", 1];};
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_127x54_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_127x54_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["srifle_DMR_05_blk_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_93x64_DMR_05_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["10Rnd_93x64_DMR_05_Mag", 1];};
+>>>>>>> origin/master
+sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["MMG_01_hex_F", 1];};
+sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_93x64_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_93x64_Mag", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["MMG_02_black_F", 1];};
 sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["130Rnd_338_Mag", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["130Rnd_338_Mag", 1];};
+>>>>>>> origin/master
+sleep 0.1;
 _var=floor(random 10);
 if (_var==1) then {_box addWeaponCargoGlobal ["LMG_Zafir_F", 1];};
 sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_H", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_L", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_M", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_B", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_acp", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_338_black", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["muzzle_snds_93mmg", 1];};
-sleep 0.1;
-_var=floor(random 200);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_Nightstalker", 1];};
-sleep 0.1;
-_var=floor(random 500);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_LRPS", 1];};
-sleep 0.1;
-_var=floor(random 20);
-if (_var==1) then {_box addWeaponCargoGlobal ["arifle_Mk20C_F", 1];};
-sleep 0.1;
-_var=floor(random 100);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_NVS", 1];};
-sleep 0.1;
-_var=floor(random 100);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_tws", 1];};
-sleep 0.1;
-_var=floor(random 500);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_tws_mg", 1];};
-sleep 0.1;
+<<<<<<< HEAD
 _var=floor(random 10);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_SOS", 1];};
+if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_762x54_Box", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_762x54_Box", 1];};
+>>>>>>> origin/master
 sleep 0.1;
 _var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["optic_DMS", 1];};
+if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_H", 1];};
+sleep 0.1;
+_var=floor(random 5);
+if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_L", 1];};
+sleep 0.1;
+_var=floor(random 5);
+if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_B", 1];};
+sleep 0.1;
+_var=floor(random 5);
+if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_acp", 1];};
+sleep 0.1;
+_var=floor(random 5);
+if (_var==1) then {_box addItemCargoGlobal ["muzzle_snds_93mmg", 1];};
+sleep 0.1;
+_var=floor(random 10000);
+if (_var==1) then {_box addItemCargoGlobal ["optic_Nightstalker", 1];};
+sleep 0.1;
+_var=floor(random 100);
+if (_var==1) then {_box addItemCargoGlobal ["optic_LRPS", 1];};
+sleep 0.1;
+_var=floor(random 10000);
+if (_var==1) then {_box addItemCargoGlobal ["optic_NVS", 1];};
+sleep 0.1;
+_var=floor(random 10000);
+if (_var==1) then {_box addItemCargoGlobal ["optic_tws", 1];};
+sleep 0.1;
+_var=floor(random 10000);
+if (_var==1) then {_box addItemCargoGlobal ["optic_tws_mg", 1];};
+sleep 0.1;
+_var=floor(random 100);
+if (_var==1) then {_box addItemCargoGlobal ["optic_SOS", 1];};
+sleep 0.1;
+_var=floor(random 5);
+if (_var==1) then {_box addItemCargoGlobal ["optic_DMS", 1];};
 sleep 0.1;
 _var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 1];};
 sleep 0.1;
-_var=floor(random 3);
+_var=floor(random 300);
 if (_var==1) then {_box addWeaponCargoGlobal ["SatchelCharge_Remote_Mag", 1];};
 sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["DemoCharge_Remote_Mag", 1];};
-sleep 0.1;
-_var=floor(random 3);
+_var=floor(random 35);
 if (_var==1) then {_box addWeaponCargoGlobal ["H_PilotHelmetFighter_B", 1];};
 sleep 0.1;
 _var=floor(random 3);
@@ -146,37 +227,75 @@ _var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["V_PlateCarrierSpec_blk", 1];};
 sleep 0.1;
 _var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_B_FullGhillie_lsh", 1];};
-sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_B_FullGhillie_sard", 1];};
-sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_B_FullGhillie_ard", 1];};
-sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_O_FullGhillie_lsh", 1];};
-sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_O_FullGhillie_sard", 1];};
-sleep 0.1;
-_var=floor(random 3);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_O_FullGhillie_ard", 1];};
-sleep 0.1;
-_var=floor(random 3);
 if (_var==1) then {_box addWeaponCargoGlobal ["DemoCharge_Remote_Mag", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_I_FullGhillie_lsh", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_I_FullGhillie_sard", 1];};
-sleep 0.1;
-_var=floor(random 5);
-if (_var==1) then {_box addWeaponCargoGlobal ["U_I_FullGhillie_ard", 1];};
 sleep 0.1;
 _var=floor(random 10);
-if (_var==1) then {_box addWeaponCargoGlobal ["DemoCharge_Remote_Mag", 1];};
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_SPAR_02_khk_F", 1];};
+sleep 0.1;
+<<<<<<< HEAD
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["150Rnd_556x45_Drum_Mag_F", 1];};
+=======
+_var=floor(random 3);
+if (_var==1) then {_box addWeaponCargoGlobal ["150Rnd_556x45_Drum_Mag_F", 1];};
+>>>>>>> origin/master
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_SPAR_03_khk_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["20Rnd_762x51_Mag", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_CTARS_hex_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["100Rnd_580x42_Mag_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_ARX_Viper_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_AKS_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_545x39_Mag_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_AKM_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_762x39_Mag_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["arifle_AK12_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["30Rnd_762x39_Mag_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["hgun_Pistol_01_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["10Rnd_9x21_Mag", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["LMG_03_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["200Rnd_556x45_Box_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addWeaponCargoGlobal ["launch_RPG7_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["RPG7_F", 1];};
+sleep 0.1;
+_var=floor(random 10);
+if (_var==1) then {_box addMagazineCargoGlobal ["RPG32_F", 1];};
 sleep 0.1;
 
 switch (_safe) do {
@@ -237,7 +356,7 @@ switch (_safe) do {
                 };
             };
         };
-        sleep(_delay*30+1);
+        sleep(_delay*60);
         if(!(fed_arm getVariable["chargeplaced",false])) exitWith {};
         _bomb = "Bo_GBU12_LGB_MI10" createVehicle [getPosATL fed_arm select 0, getPosATL fed_arm select 1, (getPosATL fed_arm select 2)+0.5];
         fed_arm setVariable["chargeplaced",false,true];
@@ -272,7 +391,7 @@ switch (_safe) do {
                 };
             };
         };
-        sleep(_delay*30+1);
+        sleep(_delay*60+1);
         if(!(fed_pharm getVariable["chargeplaced",false])) exitWith {};
 		_meth = createMarker ["meth", [getPosATL fed_pharm select 0, getPosATL fed_pharm select 1, getPosATL fed_pharm select 2]];  
 		"meth" setMarkerShape "ICON";  
